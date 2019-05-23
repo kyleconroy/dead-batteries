@@ -4,6 +4,7 @@ import (
 	"archive/tar"
 	"archive/zip"
 	"compress/gzip"
+	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -13,6 +14,7 @@ import (
 	"path/filepath"
 	"strings"
 	"sync"
+	"time"
 )
 
 func main() {
@@ -22,8 +24,10 @@ func main() {
 }
 
 type Parser struct {
-	wg sync.WaitGroup
-	in chan string
+	lock    sync.RWMutex
+	wg      sync.WaitGroup
+	in      chan string
+	results map[string]map[string]int
 }
 
 func (p *Parser) Work() {
@@ -35,49 +39,29 @@ func (p *Parser) Work() {
 			if !ok {
 				return
 			}
-			p.Parse(path)
+			if err := p.Unpack(path); err != nil {
+				log.Printf("result=failure package=%s err=%s\n", filepath.Base(path), err)
+			} else {
+				log.Printf("result=success package=%s\n", filepath.Base(path))
+			}
 		}
 	}
 }
 
-func (p *Parser) Parse(path string) {
-	defer os.Remove(path)
-	fmt.Println(path)
-	out, err := exec.Command("python3", "imports.py", path).Output()
-	if err != nil {
-		return
-	}
-	if len(out) == 0 {
-		return
-	}
-	fmt.Println(strings.Split(string(out), ","))
-}
+func (p *Parser) Unpack(pkg string) error {
+	d, name := filepath.Split(pkg)
+	_, hash := filepath.Split(filepath.Dir(d))
+	key := name + "/" + hash
 
-func run() error {
-	files := make(chan string)
-	parser := Parser{in: files}
-
-	for i := 0; i < 10; i++ {
-		go parser.Work()
+	p.lock.RLock()
+	_, ok := p.results[key]
+	p.lock.RUnlock()
+	if ok {
+		return nil
 	}
 
-	matches, err := filepath.Glob("pypi/web/packages/*/*/*/*")
-	if err != nil {
-		return err
-	}
-	for _, pkg := range matches {
-		if err := unpack(pkg, files); err != nil {
-			return err
-		}
-	}
+	results := map[string]int{}
 
-	close(files)
-	parser.wg.Wait()
-
-	return nil
-}
-
-func unpack(pkg string, files chan string) error {
 	if strings.HasSuffix(pkg, ".tar.gz") {
 		r, err := os.Open(pkg)
 		if err != nil {
@@ -113,7 +97,7 @@ func unpack(pkg string, files chan string) error {
 			if err := tmpfile.Close(); err != nil {
 				return err
 			}
-			files <- tmpfile.Name()
+			p.Parse(results, tmpfile.Name())
 		}
 	} else if strings.HasSuffix(pkg, ".whl") || strings.HasSuffix(pkg, ".zip") {
 		r, err := zip.OpenReader(pkg)
@@ -141,10 +125,85 @@ func unpack(pkg string, files chan string) error {
 			if err := tmpfile.Close(); err != nil {
 				return err
 			}
-			files <- tmpfile.Name()
+			p.Parse(results, tmpfile.Name())
 		}
 	} else {
 		fmt.Println("unknown", pkg)
 	}
+
+	p.lock.Lock()
+	p.results[key] = results
+	p.lock.Unlock()
+
 	return nil
+}
+
+func (p *Parser) Save() error {
+	p.lock.RLock()
+	defer p.lock.RUnlock()
+	blob, err := json.Marshal(p.results)
+	if err != nil {
+		return err
+	}
+	return ioutil.WriteFile("results.json", blob, 0644)
+}
+
+func (p *Parser) Parse(info map[string]int, path string) error {
+	defer os.Remove(path)
+	out, err := exec.Command("python3", "imports.py", path).Output()
+	if err != nil {
+		return err
+	}
+	if len(out) == 0 {
+		return nil
+	}
+	for _, dead := range strings.Split(string(out), ",") {
+		info[dead] += 1
+	}
+	return nil
+}
+
+func run() error {
+	pkgs := make(chan string)
+	var results map[string]map[string]int
+
+	// Load existing results
+	if _, err := os.Stat("results.json"); err == nil {
+		blob, err := ioutil.ReadFile("results.json")
+		if err != nil {
+			return err
+		}
+		if err := json.Unmarshal(blob, &results); err != nil {
+			return err
+		}
+	} else {
+		results = map[string]map[string]int{}
+	}
+
+	parser := Parser{in: pkgs, results: results}
+
+	// Save results every minute
+	ticker := time.NewTicker(60 * time.Second)
+	go func() {
+		for range ticker.C {
+			parser.Save()
+		}
+	}()
+
+	for i := 0; i < 10; i++ {
+		go parser.Work()
+	}
+
+	matches, err := filepath.Glob("pypi/web/packages/*/*/*/*")
+	if err != nil {
+		return err
+	}
+	for _, pkg := range matches {
+		pkgs <- pkg
+	}
+
+	close(pkgs)
+	parser.wg.Wait()
+
+	return parser.Save()
 }
