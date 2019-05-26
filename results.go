@@ -1,11 +1,14 @@
 package main
 
 import (
+	"encoding/csv"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -33,6 +36,7 @@ func run() error {
 	}
 
 	pkgs := map[string]Info{}
+	dead := map[string]int{}
 
 	for name, imports := range results {
 		oparts := strings.SplitN(name, "/", 2)
@@ -80,6 +84,7 @@ func run() error {
 		found := map[string]string{}
 		for battery, _ := range imports {
 			found[strings.TrimSpace(battery)] = ""
+			dead[strings.TrimSpace(battery)] += 1
 		}
 
 		keys := make([]string, 0, len(found))
@@ -95,6 +100,7 @@ func run() error {
 		}
 	}
 
+	// Write out package information
 	output := []Info{}
 	for _, i := range pkgs {
 		output = append(output, i)
@@ -105,5 +111,26 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	return ioutil.WriteFile("packages.json", blob, 0644)
+	if err := ioutil.WriteFile("packages.json", blob, 0644); err != nil {
+		return err
+	}
+
+	// Write out imports information
+	f, err := os.Create("imports.csv")
+	if err != nil {
+		return err
+	}
+	w := csv.NewWriter(f)
+	if err := w.Write([]string{"package", "imports"}); err != nil {
+		return err
+	}
+
+	for pkg, count := range dead {
+		if err := w.Write([]string{pkg, strconv.Itoa(count)}); err != nil {
+			return err
+		}
+	}
+
+	w.Flush()
+	return w.Error()
 }
