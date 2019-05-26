@@ -99,7 +99,7 @@ func (p *Parser) Unpack(pkg string) error {
 			}
 			p.Parse(results, tmpfile.Name())
 		}
-	} else if strings.HasSuffix(pkg, ".whl") || strings.HasSuffix(pkg, ".zip") {
+	} else if strings.HasSuffix(pkg, ".whl") || strings.HasSuffix(pkg, ".zip") || strings.HasSuffix(pkg, ".egg") {
 		r, err := zip.OpenReader(pkg)
 		if err != nil {
 			return err
@@ -128,7 +128,7 @@ func (p *Parser) Unpack(pkg string) error {
 			p.Parse(results, tmpfile.Name())
 		}
 	} else {
-		fmt.Println("unknown", pkg)
+		return fmt.Errorf("unknown format: %s", pkg)
 	}
 
 	p.lock.Lock()
