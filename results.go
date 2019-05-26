@@ -27,7 +27,7 @@ type Info struct {
 
 func run() error {
 	var results map[string]map[string]int
-	blob, err := ioutil.ReadFile("results-may-25.json")
+	blob, err := ioutil.ReadFile("results.json")
 	if err != nil {
 		return err
 	}
