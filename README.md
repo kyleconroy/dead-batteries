@@ -13,26 +13,34 @@ packages deprecated by PEP 594.
 
 Before you begin, you'll need Python >= 3.6 and a recent version of Go to run
 the code. All commands should be run inside a cloned checkout of the this
-repository. First, install
-[bandersnatch](https://pypi.org/project/bandersnatch/).
+repository. First, build the binary.
 
 ```
-python3 -m venv venv
-venv/bin/pip install bandersnatch
+go build
 ```
 
-The following command will mirror the latest release of every package on PyPI
-to your workstation. You'll need around 500GB of free space on your drive.
+Next, you'll download the metadata for every package on PyPI, which will take
+up about ~500MB of space.
 
 ```
-venv/bin/bandersnatch -c bandersnatch.conf mirror
+./dead-battery mirror
 ```
+
+Some packages listed in simple.html do not have any files on PyPI
+TODO: Provide an example
+
+* `simple.html`: contains a list of all known packages on PyPI  
+* `meta/*.json`: contains package metadata for each package
+* `python3-packages.json`: contains a list of packages that support Python3
 
 With a complete mirror, you're now ready to process the packages. In a screen
 session, run the search program.
 
+TODO: Add current stats
+94680 packages
+
 ```
-go run search.go
+./dead-battery scan-imports
 ```
 
 This took a few days to run, as it parses every Python file in each package. I
@@ -42,7 +50,7 @@ was slow. The output is continually saved to `results.json`.
 Once the search process is complete, generate the package statistics. 
 
 ```
-go run results.go
+./dead-battery stats
 ```
 
 Two new files have been created: `import.csv` and `packages.json`. The CSV file

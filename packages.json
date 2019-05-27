@@ -24,14 +24,6 @@
     ]
   },
   {
-    "project": "51degrees-mobile-detector-v3-trie-wrapper",
-    "version": "3.2.18.4",
-    "url": "https://pypi.org/project/51degrees-mobile-detector-v3-trie-wrapper/3.2.18.4/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "AMQP-Storm",
     "version": "1.4.0",
     "url": "https://pypi.org/project/AMQP-Storm/1.4.0/",
@@ -304,9 +296,9 @@
     ]
   },
   {
-    "project": "Automated Lazy Unit Testing in Python",
+    "project": "Automated-Lazy-Unit-Testing-in-Python",
     "version": "1.0.0",
-    "url": "https://pypi.org/project/Automated Lazy Unit Testing in Python/1.0.0/",
+    "url": "https://pypi.org/project/Automated-Lazy-Unit-Testing-in-Python/1.0.0/",
     "imports": [
       "imp"
     ]
@@ -320,9 +312,9 @@
     ]
   },
   {
-    "project": "Babel-lex-2.0-lex",
-    "version": "20150116",
-    "url": "https://pypi.org/project/Babel-lex-2.0-lex/20150116/",
+    "project": "Babel-lex",
+    "version": "2.0-lex-20150116",
+    "url": "https://pypi.org/project/Babel-lex/2.0-lex-20150116/",
     "imports": [
       "parser"
     ]
@@ -348,9 +340,9 @@
     "version": "1.3.4",
     "url": "https://pypi.org/project/Bcfg2/1.3.4/",
     "imports": [
+      "pipes",
       "crypt",
-      "imp",
-      "pipes"
+      "imp"
     ]
   },
   {
@@ -362,21 +354,13 @@
     ]
   },
   {
-    "project": "BeautifulDebug-0.2.0.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/BeautifulDebug-0.2.0.linux/x86_64/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
     "project": "Beeswarm",
     "version": "0.7.18",
     "url": "https://pypi.org/project/Beeswarm/0.7.18/",
     "imports": [
+      "smtpd",
       "asynchat",
-      "asyncore",
-      "smtpd"
+      "asyncore"
     ]
   },
   {
@@ -553,8 +537,8 @@
     "version": "3.3.3",
     "url": "https://pypi.org/project/Cactus/3.3.3/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -602,8 +586,8 @@
     "version": "3.6.1",
     "url": "https://pypi.org/project/Chameleon/3.6.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -684,11 +668,11 @@
     "version": "1.5.3.1",
     "url": "https://pypi.org/project/CleanAdminDjango/1.5.3.1/",
     "imports": [
-      "parser",
-      "smtpd",
       "asyncore",
       "crypt",
-      "imp"
+      "imp",
+      "parser",
+      "smtpd"
     ]
   },
   {
@@ -1032,9 +1016,9 @@
     ]
   },
   {
-    "project": "EasyExtend-3.0.2",
-    "version": "py2.5",
-    "url": "https://pypi.org/project/EasyExtend-3.0.2/py2.5/",
+    "project": "EasyExtend",
+    "version": "3.0.2-py2.5",
+    "url": "https://pypi.org/project/EasyExtend/3.0.2-py2.5/",
     "imports": [
       "imp",
       "parser"
@@ -1089,9 +1073,9 @@
     ]
   },
   {
-    "project": "EweeStats-0.0",
-    "version": "alpha.2",
-    "url": "https://pypi.org/project/EweeStats-0.0/alpha.2/",
+    "project": "EweeStats",
+    "version": "0.0-alpha.2",
+    "url": "https://pypi.org/project/EweeStats/0.0-alpha.2/",
     "imports": [
       "imp"
     ]
@@ -1147,16 +1131,8 @@
   },
   {
     "project": "FelloWiki",
-    "version": "0.01a1.dev_r36",
-    "url": "https://pypi.org/project/FelloWiki/0.01a1.dev_r36/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
-    "project": "FelloWiki-0.01a1.dev",
-    "version": "r36",
-    "url": "https://pypi.org/project/FelloWiki-0.01a1.dev/r36/",
+    "version": "0.01a1.dev-r36",
+    "url": "https://pypi.org/project/FelloWiki/0.01a1.dev-r36/",
     "imports": [
       "parser"
     ]
@@ -1194,9 +1170,9 @@
     ]
   },
   {
-    "project": "Flask-Async-0.11-dev",
-    "version": "20140215",
-    "url": "https://pypi.org/project/Flask-Async-0.11-dev/20140215/",
+    "project": "Flask-Async",
+    "version": "0.11-dev-20140215",
+    "url": "https://pypi.org/project/Flask-Async/0.11-dev-20140215/",
     "imports": [
       "imp"
     ]
@@ -1230,8 +1206,8 @@
     "version": "1.4.4",
     "url": "https://pypi.org/project/Flask-Email/1.4.4/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -1363,9 +1339,9 @@
     ]
   },
   {
-    "project": "GRR-M2Crypto",
-    "version": "0.22.6.post2",
-    "url": "https://pypi.org/project/GRR-M2Crypto/0.22.6.post2/",
+    "project": "GRR",
+    "version": "M2Crypto-0.22.6.post2",
+    "url": "https://pypi.org/project/GRR/M2Crypto-0.22.6.post2/",
     "imports": [
       "asyncore"
     ]
@@ -1452,9 +1428,9 @@
     ]
   },
   {
-    "project": "GraphLab-Create-2.1",
-    "version": "py2.7",
-    "url": "https://pypi.org/project/GraphLab-Create-2.1/py2.7/",
+    "project": "GraphLab-Create",
+    "version": "2.1-py2.7",
+    "url": "https://pypi.org/project/GraphLab-Create/2.1-py2.7/",
     "imports": [
       "imp",
       "parser"
@@ -1650,8 +1626,8 @@
     "version": "2.0.0",
     "url": "https://pypi.org/project/KDVS/2.0.0/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -1723,8 +1699,8 @@
     "version": "1.10.1",
     "url": "https://pypi.org/project/Kivy/1.10.1/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -1820,9 +1796,9 @@
     "version": "9.3",
     "url": "https://pypi.org/project/LinkChecker/9.3/",
     "imports": [
+      "parser",
       "imp",
-      "nntplib",
-      "parser"
+      "nntplib"
     ]
   },
   {
@@ -1830,8 +1806,8 @@
     "version": "0.3",
     "url": "https://pypi.org/project/Lokai/0.3/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -1860,17 +1836,17 @@
     ]
   },
   {
-    "project": "M2CryptoWin32-0.21.1",
-    "version": "3",
-    "url": "https://pypi.org/project/M2CryptoWin32-0.21.1/3/",
+    "project": "M2CryptoWin32",
+    "version": "0.21.1-3",
+    "url": "https://pypi.org/project/M2CryptoWin32/0.21.1-3/",
     "imports": [
       "asyncore"
     ]
   },
   {
-    "project": "M2CryptoWin64-0.21.1",
-    "version": "3",
-    "url": "https://pypi.org/project/M2CryptoWin64-0.21.1/3/",
+    "project": "M2CryptoWin64",
+    "version": "0.21.1-3",
+    "url": "https://pypi.org/project/M2CryptoWin64/0.21.1-3/",
     "imports": [
       "asyncore"
     ]
@@ -1953,8 +1929,8 @@
     "version": "1.0.10",
     "url": "https://pypi.org/project/Mako/1.0.10/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -2127,9 +2103,9 @@
     ]
   },
   {
-    "project": "Nemo Templates",
+    "project": "Nemo-Templates",
     "version": "0.9.2",
-    "url": "https://pypi.org/project/Nemo Templates/0.9.2/",
+    "url": "https://pypi.org/project/Nemo-Templates/0.9.2/",
     "imports": [
       "parser"
     ]
@@ -2285,10 +2261,10 @@
     "version": "4.7.6",
     "url": "https://pypi.org/project/OpenCobolIDE/4.7.6/",
     "imports": [
-      "imghdr",
       "imp",
       "sndhdr",
-      "uu"
+      "uu",
+      "imghdr"
     ]
   },
   {
@@ -2296,9 +2272,9 @@
     "version": "1.0",
     "url": "https://pypi.org/project/OpenCoweb/1.0/",
     "imports": [
+      "imp",
       "asynchat",
-      "asyncore",
-      "imp"
+      "asyncore"
     ]
   },
   {
@@ -2479,12 +2455,12 @@
     ]
   },
   {
-    "project": "P4D Langlet-1.2.4",
-    "version": "py2.5",
-    "url": "https://pypi.org/project/P4D Langlet-1.2.4/py2.5/",
+    "project": "P4D-Langlet",
+    "version": "1.2.4-py2.5",
+    "url": "https://pypi.org/project/P4D-Langlet/1.2.4-py2.5/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -2492,8 +2468,8 @@
     "version": "0.4.3",
     "url": "https://pypi.org/project/PGPy/0.4.3/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -2589,8 +2565,8 @@
     "version": "0.11.0",
     "url": "https://pypi.org/project/PodSixNet/0.11.0/",
     "imports": [
-      "asynchat",
-      "asyncore"
+      "asyncore",
+      "asynchat"
     ]
   },
   {
@@ -2758,8 +2734,8 @@
     "version": "2.7.1874",
     "url": "https://pypi.org/project/PyAfipWs/2.7.1874/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -2799,8 +2775,8 @@
     "version": "0.90.2",
     "url": "https://pypi.org/project/PyDSTool/0.90.2/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -2985,9 +2961,9 @@
     "version": "2.0.1",
     "url": "https://pypi.org/project/PyMOTW/2.0.1/",
     "imports": [
-      "asynchat",
       "asyncore",
-      "smtpd"
+      "smtpd",
+      "asynchat"
     ]
   },
   {
@@ -3287,9 +3263,9 @@
     ]
   },
   {
-    "project": "PyZinc-3.0.5-Python",
-    "version": "2.7",
-    "url": "https://pypi.org/project/PyZinc-3.0.5-Python/2.7/",
+    "project": "PyZinc",
+    "version": "3.0.5-Python-2.7",
+    "url": "https://pypi.org/project/PyZinc/3.0.5-Python-2.7/",
     "imports": [
       "imp"
     ]
@@ -3508,9 +3484,9 @@
     ]
   },
   {
-    "project": "RimuAPI-0.0.5.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/RimuAPI-0.0.5.linux/x86_64/",
+    "project": "RimuAPI",
+    "version": "0.0.5",
+    "url": "https://pypi.org/project/RimuAPI/0.0.5/",
     "imports": [
       "imp"
     ]
@@ -3556,9 +3532,9 @@
     ]
   },
   {
-    "project": "SFrame-2.1",
-    "version": "py2.7",
-    "url": "https://pypi.org/project/SFrame-2.1/py2.7/",
+    "project": "SFrame",
+    "version": "2.1-py2.7",
+    "url": "https://pypi.org/project/SFrame/2.1-py2.7/",
     "imports": [
       "imp",
       "parser"
@@ -3581,9 +3557,9 @@
     ]
   },
   {
-    "project": "SOAPpy-py3",
-    "version": "0.52.24",
-    "url": "https://pypi.org/project/SOAPpy-py3/0.52.24/",
+    "project": "SOAPpy",
+    "version": "py3-0.52.24",
+    "url": "https://pypi.org/project/SOAPpy/py3-0.52.24/",
     "imports": [
       "asyncore"
     ]
@@ -3665,8 +3641,8 @@
     "version": "2018.9.21",
     "url": "https://pypi.org/project/SaltTesting/2018.9.21/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -3894,9 +3870,9 @@
     ]
   },
   {
-    "project": "Sphinx Explorer",
+    "project": "Sphinx-Explorer",
     "version": "0.99",
-    "url": "https://pypi.org/project/Sphinx Explorer/0.99/",
+    "url": "https://pypi.org/project/Sphinx-Explorer/0.99/",
     "imports": [
       "pipes"
     ]
@@ -4021,9 +3997,9 @@
     "version": "1.0.3",
     "url": "https://pypi.org/project/TMDAng/1.0.3/",
     "imports": [
-      "crypt",
       "asynchat",
-      "asyncore"
+      "asyncore",
+      "crypt"
     ]
   },
   {
@@ -4175,8 +4151,8 @@
     "version": "1.2.3",
     "url": "https://pypi.org/project/Trac/1.2.3/",
     "imports": [
-      "imp",
-      "crypt"
+      "crypt",
+      "imp"
     ]
   },
   {
@@ -4196,9 +4172,9 @@
     ]
   },
   {
-    "project": "TransFabric-Python2X-Linux-x64",
-    "version": "1.0",
-    "url": "https://pypi.org/project/TransFabric-Python2X-Linux-x64/1.0/",
+    "project": "TransFabric",
+    "version": "Python2X-Linux-x64-1.0",
+    "url": "https://pypi.org/project/TransFabric/Python2X-Linux-x64-1.0/",
     "imports": [
       "imp"
     ]
@@ -4458,9 +4434,9 @@
     ]
   },
   {
-    "project": "WinSys-3.x",
-    "version": "0.5.2",
-    "url": "https://pypi.org/project/WinSys-3.x/0.5.2/",
+    "project": "WinSys",
+    "version": "3.x-0.5.2",
+    "url": "https://pypi.org/project/WinSys/3.x-0.5.2/",
     "imports": [
       "imp"
     ]
@@ -4543,9 +4519,9 @@
     "version": "4.0.1",
     "url": "https://pypi.org/project/ZServer/4.0.1/",
     "imports": [
-      "crypt",
       "asynchat",
-      "asyncore"
+      "asyncore",
+      "crypt"
     ]
   },
   {
@@ -4658,8 +4634,8 @@
     "version": "0.4.0",
     "url": "https://pypi.org/project/abupy/0.4.0/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -4703,9 +4679,9 @@
     ]
   },
   {
-    "project": "adafruit-circuitpython-apds9960",
-    "version": "1.2.3",
-    "url": "https://pypi.org/project/adafruit-circuitpython-apds9960/1.2.3/",
+    "project": "adafruit-circuitpython",
+    "version": "apds9960-1.2.3",
+    "url": "https://pypi.org/project/adafruit-circuitpython/apds9960-1.2.3/",
     "imports": [
       "imp"
     ]
@@ -5073,12 +5049,12 @@
     ]
   },
   {
-    "project": "ak-M2Crypto",
-    "version": "0.26.1",
-    "url": "https://pypi.org/project/ak-M2Crypto/0.26.1/",
+    "project": "ak",
+    "version": "M2Crypto-0.26.1",
+    "url": "https://pypi.org/project/ak/M2Crypto-0.26.1/",
     "imports": [
-      "imp",
-      "asyncore"
+      "asyncore",
+      "imp"
     ]
   },
   {
@@ -5087,6 +5063,14 @@
     "url": "https://pypi.org/project/akita/0.1.3/",
     "imports": [
       "parser"
+    ]
+  },
+  {
+    "project": "alas",
+    "version": "ce0-whatsapp-0.5",
+    "url": "https://pypi.org/project/alas/ce0-whatsapp-0.5/",
+    "imports": [
+      "asyncore"
     ]
   },
   {
@@ -5240,8 +5224,8 @@
     "version": "0.9.0",
     "url": "https://pypi.org/project/ally-py/0.9.0/",
     "imports": [
-      "asyncore",
-      "imp"
+      "imp",
+      "asyncore"
     ]
   },
   {
@@ -5305,8 +5289,8 @@
     "version": "1.0.1",
     "url": "https://pypi.org/project/amane/1.0.1/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -5394,8 +5378,8 @@
     "version": "0.14.0",
     "url": "https://pypi.org/project/anaconda-build/0.14.0/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -5467,13 +5451,13 @@
     "version": "2.8.0",
     "url": "https://pypi.org/project/ansible/2.8.0/",
     "imports": [
+      "smtpd",
+      "spwd",
       "asyncore",
       "crypt",
       "imp",
       "parser",
-      "pipes",
-      "smtpd",
-      "spwd"
+      "pipes"
     ]
   },
   {
@@ -5481,8 +5465,8 @@
     "version": "1.30",
     "url": "https://pypi.org/project/ansible-cmdb/1.30/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -5703,8 +5687,8 @@
     "version": "1.1.3",
     "url": "https://pypi.org/project/apoclypsebm/1.1.3/",
     "imports": [
-      "asynchat",
-      "asyncore"
+      "asyncore",
+      "asynchat"
     ]
   },
   {
@@ -5728,20 +5712,20 @@
     "version": "1.9.75.post0",
     "url": "https://pypi.org/project/appengine-sdk/1.9.75.post0/",
     "imports": [
-      "imp",
-      "pipes",
-      "sndhdr",
       "aifc",
-      "xdrlib",
-      "macpath",
-      "crypt",
-      "imghdr",
-      "parser",
-      "sunau",
-      "nntplib",
-      "chunk",
+      "formatter",
       "uu",
-      "formatter"
+      "sunau",
+      "parser",
+      "pipes",
+      "imghdr",
+      "imp",
+      "macpath",
+      "nntplib",
+      "xdrlib",
+      "chunk",
+      "crypt",
+      "sndhdr"
     ]
   },
   {
@@ -5819,17 +5803,17 @@
     ]
   },
   {
-    "project": "apsw-3.9.2",
-    "version": "r1",
-    "url": "https://pypi.org/project/apsw-3.9.2/r1/",
+    "project": "apsw",
+    "version": "3.9.2-r1",
+    "url": "https://pypi.org/project/apsw/3.9.2-r1/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "apsw-cledoux-3.9.2",
-    "version": "r1",
-    "url": "https://pypi.org/project/apsw-cledoux-3.9.2/r1/",
+    "project": "apsw-cledoux",
+    "version": "3.9.2-r1",
+    "url": "https://pypi.org/project/apsw-cledoux/3.9.2-r1/",
     "imports": [
       "imp"
     ]
@@ -5969,8 +5953,8 @@
     "version": "0.3.1",
     "url": "https://pypi.org/project/arkcserver/0.3.1/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -6100,8 +6084,8 @@
     "version": "0.146.1",
     "url": "https://pypi.org/project/asn1tools/0.146.1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -6313,17 +6297,17 @@
     ]
   },
   {
-    "project": "asymmetricbase.utils-0.1.4",
-    "version": "201404241723",
-    "url": "https://pypi.org/project/asymmetricbase.utils-0.1.4/201404241723/",
+    "project": "asymmetricbase.utils",
+    "version": "0.1.4-201404241723",
+    "url": "https://pypi.org/project/asymmetricbase.utils/0.1.4-201404241723/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "asymmetricbase.views-0.1.0",
-    "version": "201404231345",
-    "url": "https://pypi.org/project/asymmetricbase.views-0.1.0/201404231345/",
+    "project": "asymmetricbase.views",
+    "version": "0.1.0-201404231345",
+    "url": "https://pypi.org/project/asymmetricbase.views/0.1.0-201404231345/",
     "imports": [
       "imp"
     ]
@@ -6471,8 +6455,8 @@
     "version": "4.0.2",
     "url": "https://pypi.org/project/audio.coders/4.0.2/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -6480,8 +6464,8 @@
     "version": "0.2.2",
     "url": "https://pypi.org/project/audio.filters/0.2.2/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -6525,8 +6509,8 @@
     "version": "1.0.0",
     "url": "https://pypi.org/project/audio.lp/1.0.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -6534,8 +6518,8 @@
     "version": "1.0.4",
     "url": "https://pypi.org/project/audio.psychoacoustics/1.0.4/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -6594,9 +6578,9 @@
     "version": "2.1.7",
     "url": "https://pypi.org/project/audioread/2.1.7/",
     "imports": [
-      "sunau",
       "aifc",
-      "imp"
+      "imp",
+      "sunau"
     ]
   },
   {
@@ -6797,9 +6781,9 @@
     "version": "69.0",
     "url": "https://pypi.org/project/avocado-framework/69.0/",
     "imports": [
-      "parser",
       "pipes",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -6819,6 +6803,14 @@
     ]
   },
   {
+    "project": "aws",
+    "version": "psycopg2-1.1.1",
+    "url": "https://pypi.org/project/aws/psycopg2-1.1.1/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
     "project": "aws-backup-client",
     "version": "0.0.6",
     "url": "https://pypi.org/project/aws-backup-client/0.0.6/",
@@ -6827,9 +6819,9 @@
     ]
   },
   {
-    "project": "aws-cfn-bootstrap-1.4",
-    "version": "31",
-    "url": "https://pypi.org/project/aws-cfn-bootstrap-1.4/31/",
+    "project": "aws-cfn-bootstrap",
+    "version": "1.4-31",
+    "url": "https://pypi.org/project/aws-cfn-bootstrap/1.4-31/",
     "imports": [
       "imp"
     ]
@@ -6935,8 +6927,8 @@
     "version": "5.0.0",
     "url": "https://pypi.org/project/axado.pyjade/5.0.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -7287,9 +7279,9 @@
     ]
   },
   {
-    "project": "bayeslite-apsw-3.9.2",
-    "version": "r1+pypiisbroken",
-    "url": "https://pypi.org/project/bayeslite-apsw-3.9.2/r1+pypiisbroken/",
+    "project": "bayeslite-apsw",
+    "version": "3.9.2-r1+pypiisbroken",
+    "url": "https://pypi.org/project/bayeslite-apsw/3.9.2-r1+pypiisbroken/",
     "imports": [
       "imp"
     ]
@@ -7347,8 +7339,8 @@
     "version": "0.3.7",
     "url": "https://pypi.org/project/be/0.3.7/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -7617,8 +7609,8 @@
     "version": "2.1.1",
     "url": "https://pypi.org/project/bgmi/2.1.1/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -7884,8 +7876,8 @@
     "version": "0.0.2",
     "url": "https://pypi.org/project/bitdust/0.0.2/",
     "imports": [
-      "crypt",
-      "imp"
+      "imp",
+      "crypt"
     ]
   },
   {
@@ -7941,9 +7933,9 @@
     "version": "2.29.9",
     "url": "https://pypi.org/project/bleeding-rez/2.29.9/",
     "imports": [
-      "imp",
       "parser",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -8069,16 +8061,8 @@
   },
   {
     "project": "boilerpipe",
-    "version": "1.2.0.0",
-    "url": "https://pypi.org/project/boilerpipe/1.2.0.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "boilerpipe-py3",
-    "version": "1.2.0.0",
-    "url": "https://pypi.org/project/boilerpipe-py3/1.2.0.0/",
+    "version": "py3-1.2.0.0",
+    "url": "https://pypi.org/project/boilerpipe/py3-1.2.0.0/",
     "imports": [
       "imp"
     ]
@@ -8236,14 +8220,6 @@
     ]
   },
   {
-    "project": "botocore-python3",
-    "version": "1.12.139",
-    "url": "https://pypi.org/project/botocore-python3/1.12.139/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "botornado",
     "version": "0.0.4",
     "url": "https://pypi.org/project/botornado/0.0.4/",
@@ -8261,16 +8237,8 @@
   },
   {
     "project": "bottle",
-    "version": "0.12.16",
-    "url": "https://pypi.org/project/bottle/0.12.16/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "bottle-web2pydal",
-    "version": "0.0.1",
-    "url": "https://pypi.org/project/bottle-web2pydal/0.0.1/",
+    "version": "web2pydal-0.0.1",
+    "url": "https://pypi.org/project/bottle/web2pydal-0.0.1/",
     "imports": [
       "formatter"
     ]
@@ -8328,9 +8296,9 @@
     "version": "1.2",
     "url": "https://pypi.org/project/bpy-lambda/1.2/",
     "imports": [
-      "imghdr",
       "imp",
-      "chunk"
+      "chunk",
+      "imghdr"
     ]
   },
   {
@@ -8373,8 +8341,8 @@
     "version": "2.1.4",
     "url": "https://pypi.org/project/breakpoint/2.1.4/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -8407,9 +8375,9 @@
     "version": "1.4.4",
     "url": "https://pypi.org/project/brian/1.4.4/",
     "imports": [
-      "parser",
       "aifc",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -8433,8 +8401,8 @@
     "version": "0.3.6",
     "url": "https://pypi.org/project/bridgedb/0.3.6/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -8594,8 +8562,8 @@
     "version": "0.9.3",
     "url": "https://pypi.org/project/budou/0.9.3/",
     "imports": [
-      "chunk",
-      "parser"
+      "parser",
+      "chunk"
     ]
   },
   {
@@ -8643,8 +8611,8 @@
     "version": "0.4",
     "url": "https://pypi.org/project/buildconfig/0.4/",
     "imports": [
-      "parser",
-      "pipes"
+      "pipes",
+      "parser"
     ]
   },
   {
@@ -9187,14 +9155,6 @@
     ]
   },
   {
-    "project": "celery-meiqia-3.1.26",
-    "version": "3",
-    "url": "https://pypi.org/project/celery-meiqia-3.1.26/3/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "celery-rf",
     "version": "4.1.1",
     "url": "https://pypi.org/project/celery-rf/4.1.1/",
@@ -9417,8 +9377,8 @@
     "version": "1.6.0",
     "url": "https://pypi.org/project/cgcloud-core/1.6.0/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -9562,16 +9522,8 @@
   },
   {
     "project": "chillin-client",
-    "version": "1.3.1",
-    "url": "https://pypi.org/project/chillin-client/1.3.1/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "chillin-client-1.3.1",
-    "version": "py2.py3",
-    "url": "https://pypi.org/project/chillin-client-1.3.1/py2.py3/",
+    "version": "1.3.1-py2.py3",
+    "url": "https://pypi.org/project/chillin-client/1.3.1-py2.py3/",
     "imports": [
       "imp"
     ]
@@ -9581,8 +9533,8 @@
     "version": "2.0.0",
     "url": "https://pypi.org/project/chillin-server/2.0.0/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -9716,9 +9668,9 @@
     ]
   },
   {
-    "project": "cirruscluster-0.0.1",
-    "version": "17",
-    "url": "https://pypi.org/project/cirruscluster-0.0.1/17/",
+    "project": "cirruscluster",
+    "version": "0.0.1-17",
+    "url": "https://pypi.org/project/cirruscluster/0.0.1-17/",
     "imports": [
       "imp",
       "pipes"
@@ -9745,8 +9697,7 @@
     "version": "0.4.0",
     "url": "https://pypi.org/project/citeproc-py/0.4.0/",
     "imports": [
-      "formatter",
-      "imp"
+      "formatter"
     ]
   },
   {
@@ -10123,10 +10074,10 @@
     "version": "0.2.0",
     "url": "https://pypi.org/project/cmdix/0.2.0/",
     "imports": [
-      "crypt",
-      "smtpd",
       "spwd",
-      "asyncore"
+      "asyncore",
+      "crypt",
+      "smtpd"
     ]
   },
   {
@@ -10406,8 +10357,8 @@
     "version": "10.0",
     "url": "https://pypi.org/project/coloredlogs/10.0/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -10836,6 +10787,14 @@
     ]
   },
   {
+    "project": "cos",
+    "version": "python3-sdk-v5-1.3.2",
+    "url": "https://pypi.org/project/cos/python3-sdk-v5-1.3.2/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
     "project": "cos-python3-sdk-v5",
     "version": "1.3.2",
     "url": "https://pypi.org/project/cos-python3-sdk-v5/1.3.2/",
@@ -10984,14 +10943,6 @@
     "project": "crackmapexec",
     "version": "3.1.5",
     "url": "https://pypi.org/project/crackmapexec/3.1.5/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "crackmapexec-3.1.5.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/crackmapexec-3.1.5.linux/x86_64/",
     "imports": [
       "imp"
     ]
@@ -11169,8 +11120,8 @@
     "version": "0.5.2",
     "url": "https://pypi.org/project/crossplane/0.5.2/",
     "imports": [
-      "parser",
-      "formatter"
+      "formatter",
+      "parser"
     ]
   },
   {
@@ -11387,8 +11338,8 @@
     "version": "0.4.1",
     "url": "https://pypi.org/project/curdling/0.4.1/",
     "imports": [
-      "crypt",
-      "imp"
+      "imp",
+      "crypt"
     ]
   },
   {
@@ -11492,8 +11443,8 @@
     "version": "5.1.1",
     "url": "https://pypi.org/project/cx-Freeze/5.1.1/",
     "imports": [
-      "imp",
-      "msilib"
+      "msilib",
+      "imp"
     ]
   },
   {
@@ -11821,9 +11772,9 @@
     "version": "0.2.3",
     "url": "https://pypi.org/project/dataspine-cli/0.2.3/",
     "imports": [
+      "imp",
       "parser",
-      "pipes",
-      "imp"
+      "pipes"
     ]
   },
   {
@@ -11956,9 +11907,9 @@
     ]
   },
   {
-    "project": "dcmt-0.6.1",
-    "version": "4",
-    "url": "https://pypi.org/project/dcmt-0.6.1/4/",
+    "project": "dcmt",
+    "version": "0.6.1-4",
+    "url": "https://pypi.org/project/dcmt/0.6.1-4/",
     "imports": [
       "imp"
     ]
@@ -12261,9 +12212,9 @@
     ]
   },
   {
-    "project": "devpi-theme-16",
-    "version": "2.1.0",
-    "url": "https://pypi.org/project/devpi-theme-16/2.1.0/",
+    "project": "devpi-theme",
+    "version": "16-2.1.0",
+    "url": "https://pypi.org/project/devpi-theme/16-2.1.0/",
     "imports": [
       "imp"
     ]
@@ -12418,8 +12369,8 @@
     "version": "0.2.9",
     "url": "https://pypi.org/project/dill/0.2.9/",
     "imports": [
-      "imp",
-      "xdrlib"
+      "xdrlib",
+      "imp"
     ]
   },
   {
@@ -12447,9 +12398,9 @@
     ]
   },
   {
-    "project": "dirt-0.2.1",
-    "version": "unstable",
-    "url": "https://pypi.org/project/dirt-0.2.1/unstable/",
+    "project": "dirt",
+    "version": "0.2.1-unstable",
+    "url": "https://pypi.org/project/dirt/0.2.1-unstable/",
     "imports": [
       "imp"
     ]
@@ -12656,6 +12607,14 @@
     ]
   },
   {
+    "project": "django",
+    "version": "html5-appcache-0.4.0",
+    "url": "https://pypi.org/project/django/html5-appcache-0.4.0/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
     "project": "django-activation",
     "version": "0.1.2v",
     "url": "https://pypi.org/project/django-activation/0.1.2v/",
@@ -12837,14 +12796,6 @@
     "url": "https://pypi.org/project/django-awl/0.23.1/",
     "imports": [
       "imp"
-    ]
-  },
-  {
-    "project": "django-b64-img",
-    "version": "1.1",
-    "url": "https://pypi.org/project/django-b64-img/1.1/",
-    "imports": [
-      "imghdr"
     ]
   },
   {
@@ -13068,8 +13019,8 @@
     "version": "2.2",
     "url": "https://pypi.org/project/django-compressor/2.2/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -13202,16 +13153,8 @@
   },
   {
     "project": "django-dajaxice",
-    "version": "0.7",
-    "url": "https://pypi.org/project/django-dajaxice/0.7/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "django-dajaxice-1.9",
-    "version": "0.8.1.1",
-    "url": "https://pypi.org/project/django-dajaxice-1.9/0.8.1.1/",
+    "version": "1.9-0.8.1.1",
+    "url": "https://pypi.org/project/django-dajaxice/1.9-0.8.1.1/",
     "imports": [
       "imp"
     ]
@@ -13249,9 +13192,9 @@
     ]
   },
   {
-    "project": "django-datatables-0.1.0",
-    "version": "r35",
-    "url": "https://pypi.org/project/django-datatables-0.1.0/r35/",
+    "project": "django-datatables",
+    "version": "0.1.0-r35",
+    "url": "https://pypi.org/project/django-datatables/0.1.0-r35/",
     "imports": [
       "imp"
     ]
@@ -13281,9 +13224,9 @@
     ]
   },
   {
-    "project": "django-dburlresolvers-0.1.0",
-    "version": "beta",
-    "url": "https://pypi.org/project/django-dburlresolvers-0.1.0/beta/",
+    "project": "django-dburlresolvers",
+    "version": "0.1.0-beta",
+    "url": "https://pypi.org/project/django-dburlresolvers/0.1.0-beta/",
     "imports": [
       "imp"
     ]
@@ -13382,8 +13325,8 @@
     "version": "1.5",
     "url": "https://pypi.org/project/django-email-bandit/1.5/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -13439,9 +13382,9 @@
     "version": "2.1.7",
     "url": "https://pypi.org/project/django-extensions/2.1.7/",
     "imports": [
+      "smtpd",
       "asyncore",
-      "imp",
-      "smtpd"
+      "imp"
     ]
   },
   {
@@ -13653,14 +13596,6 @@
     ]
   },
   {
-    "project": "django-html5-appcache",
-    "version": "0.4.0",
-    "url": "https://pypi.org/project/django-html5-appcache/0.4.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "django-human-datetime",
     "version": "0.1",
     "url": "https://pypi.org/project/django-human-datetime/0.1/",
@@ -13745,8 +13680,8 @@
     "version": "0.5.5",
     "url": "https://pypi.org/project/django-kss/0.5.5/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -13754,8 +13689,8 @@
     "version": "0.5.9",
     "url": "https://pypi.org/project/django-kss-styleguide/0.5.9/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -13911,9 +13846,9 @@
     ]
   },
   {
-    "project": "django-model-i18n",
-    "version": "0.5.1",
-    "url": "https://pypi.org/project/django-model-i18n/0.5.1/",
+    "project": "django-model",
+    "version": "i18n-0.5.1",
+    "url": "https://pypi.org/project/django-model/i18n-0.5.1/",
     "imports": [
       "imp"
     ]
@@ -14008,16 +13943,8 @@
   },
   {
     "project": "django-package-skeleton",
-    "version": "0.1_2_gf7bf",
-    "url": "https://pypi.org/project/django-package-skeleton/0.1_2_gf7bf/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "django-package-skeleton-0.1-2",
-    "version": "gf7bf",
-    "url": "https://pypi.org/project/django-package-skeleton-0.1-2/gf7bf/",
+    "version": "0.1-2-gf7bf",
+    "url": "https://pypi.org/project/django-package-skeleton/0.1-2-gf7bf/",
     "imports": [
       "imp"
     ]
@@ -14055,14 +13982,6 @@
     ]
   },
   {
-    "project": "django-phpBB3",
-    "version": "0.3.0",
-    "url": "https://pypi.org/project/django-phpBB3/0.3.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "django-pip-starter",
     "version": "1.0.3",
     "url": "https://pypi.org/project/django-pip-starter/1.0.3/",
@@ -14071,9 +13990,9 @@
     ]
   },
   {
-    "project": "django-player-0.1.0",
-    "version": "alpha",
-    "url": "https://pypi.org/project/django-player-0.1.0/alpha/",
+    "project": "django-player",
+    "version": "0.1.0-alpha",
+    "url": "https://pypi.org/project/django-player/0.1.0-alpha/",
     "imports": [
       "imp"
     ]
@@ -14083,8 +14002,8 @@
     "version": "1.2.10",
     "url": "https://pypi.org/project/django-precise-bbcode/1.2.10/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -14240,14 +14159,6 @@
     ]
   },
   {
-    "project": "django-rss2rest",
-    "version": "0.1",
-    "url": "https://pypi.org/project/django-rss2rest/0.1/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
     "project": "django-runstack",
     "version": "0.1",
     "url": "https://pypi.org/project/django-runstack/0.1/",
@@ -14369,17 +14280,17 @@
     ]
   },
   {
-    "project": "django-social-auth",
-    "version": "0.7.28",
-    "url": "https://pypi.org/project/django-social-auth/0.7.28/",
+    "project": "django-social",
+    "version": "auth3-0.7.23",
+    "url": "https://pypi.org/project/django-social/auth3-0.7.23/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "django-social-auth3",
-    "version": "0.7.23",
-    "url": "https://pypi.org/project/django-social-auth3/0.7.23/",
+    "project": "django-social-auth",
+    "version": "0.7.28",
+    "url": "https://pypi.org/project/django-social-auth/0.7.28/",
     "imports": [
       "imp"
     ]
@@ -14418,8 +14329,8 @@
   },
   {
     "project": "django-starter-box",
-    "version": "0.1.1",
-    "url": "https://pypi.org/project/django-starter-box/0.1.1/",
+    "version": "0.1.0",
+    "url": "https://pypi.org/project/django-starter-box/0.1.0/",
     "imports": [
       "imp"
     ]
@@ -14508,9 +14419,9 @@
     ]
   },
   {
-    "project": "django-transcrypt-exp-0.0.1",
-    "version": "4",
-    "url": "https://pypi.org/project/django-transcrypt-exp-0.0.1/4/",
+    "project": "django-transcrypt-exp",
+    "version": "0.0.1-4",
+    "url": "https://pypi.org/project/django-transcrypt-exp/0.0.1-4/",
     "imports": [
       "imp"
     ]
@@ -14519,14 +14430,6 @@
     "project": "django-treemenus",
     "version": "0.9.2",
     "url": "https://pypi.org/project/django-treemenus/0.9.2/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "django-treemenus2",
-    "version": "0.9.3",
-    "url": "https://pypi.org/project/django-treemenus2/0.9.3/",
     "imports": [
       "imp"
     ]
@@ -14850,8 +14753,8 @@
     "version": "0.0.4",
     "url": "https://pypi.org/project/djx/0.0.4/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -14941,8 +14844,8 @@
     "version": "1.24.0",
     "url": "https://pypi.org/project/docker-compose/1.24.0/",
     "imports": [
-      "pipes",
-      "formatter"
+      "formatter",
+      "pipes"
     ]
   },
   {
@@ -15531,8 +15434,8 @@
     "version": "0.265.0",
     "url": "https://pypi.org/project/dxpy3/0.265.0/",
     "imports": [
-      "pipes",
-      "imghdr"
+      "imghdr",
+      "pipes"
     ]
   },
   {
@@ -15721,9 +15624,9 @@
     ]
   },
   {
-    "project": "edeposit.amqp.antivir-0.1",
-    "version": "alpha",
-    "url": "https://pypi.org/project/edeposit.amqp.antivir-0.1/alpha/",
+    "project": "edeposit.amqp.antivir",
+    "version": "0.1-alpha",
+    "url": "https://pypi.org/project/edeposit.amqp.antivir/0.1-alpha/",
     "imports": [
       "imp"
     ]
@@ -15853,8 +15756,8 @@
     "version": "4.0.2",
     "url": "https://pypi.org/project/email/4.0.2/",
     "imports": [
-      "imghdr",
-      "sndhdr"
+      "sndhdr",
+      "imghdr"
     ]
   },
   {
@@ -15985,8 +15888,8 @@
     "version": "1.0.3",
     "url": "https://pypi.org/project/enough/1.0.3/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -16071,17 +15974,9 @@
     ]
   },
   {
-    "project": "epika-python2",
-    "version": "0.9.14",
-    "url": "https://pypi.org/project/epika-python2/0.9.14/",
-    "imports": [
-      "asyncore"
-    ]
-  },
-  {
-    "project": "epika-python3",
-    "version": "0.9.14",
-    "url": "https://pypi.org/project/epika-python3/0.9.14/",
+    "project": "epika",
+    "version": "python3-0.9.14",
+    "url": "https://pypi.org/project/epika/python3-0.9.14/",
     "imports": [
       "asyncore"
     ]
@@ -16090,14 +15985,6 @@
     "project": "epivizFileServer",
     "version": "0.1.2",
     "url": "https://pypi.org/project/epivizFileServer/0.1.2/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
-    "project": "epivizFileServer-0.1.2.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/epivizFileServer-0.1.2.linux/x86_64/",
     "imports": [
       "parser"
     ]
@@ -16399,8 +16286,8 @@
     "version": "5.1.0.dev",
     "url": "https://pypi.org/project/exem-notebook/5.1.0.dev/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -16664,8 +16551,8 @@
     "version": "0.20.0",
     "url": "https://pypi.org/project/fabtools/0.20.0/",
     "imports": [
-      "pipes",
-      "crypt"
+      "crypt",
+      "pipes"
     ]
   },
   {
@@ -16682,8 +16569,8 @@
     "version": "0.19.0",
     "url": "https://pypi.org/project/fabtools3/0.19.0/",
     "imports": [
-      "crypt",
-      "pipes"
+      "pipes",
+      "crypt"
     ]
   },
   {
@@ -16715,8 +16602,8 @@
     "version": "4.0.10",
     "url": "https://pypi.org/project/factored/4.0.10/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -17047,8 +16934,8 @@
     "version": "0.1.13",
     "url": "https://pypi.org/project/ficloud/0.1.13/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -17072,8 +16959,8 @@
     "version": "1.2.1",
     "url": "https://pypi.org/project/figura/1.2.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -17273,8 +17160,8 @@
     "version": "1.1.2",
     "url": "https://pypi.org/project/firebirdsql/1.1.2/",
     "imports": [
-      "crypt",
-      "xdrlib"
+      "xdrlib",
+      "crypt"
     ]
   },
   {
@@ -17366,6 +17253,14 @@
     ]
   },
   {
+    "project": "flask",
+    "version": "saml2-0.1.0",
+    "url": "https://pypi.org/project/flask/saml2-0.1.0/",
+    "imports": [
+      "parser"
+    ]
+  },
+  {
     "project": "flask-autorouter",
     "version": "0.2.1",
     "url": "https://pypi.org/project/flask-autorouter/0.2.1/",
@@ -17401,14 +17296,6 @@
     "project": "flask-now",
     "version": "0.1.5",
     "url": "https://pypi.org/project/flask-now/0.1.5/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
-    "project": "flask-saml2",
-    "version": "0.1.0",
-    "url": "https://pypi.org/project/flask-saml2/0.1.0/",
     "imports": [
       "parser"
     ]
@@ -17514,8 +17401,8 @@
     "version": "0.2.4.0",
     "url": "https://pypi.org/project/flocksync/0.2.4.0/",
     "imports": [
-      "asyncore",
-      "asynchat"
+      "asynchat",
+      "asyncore"
     ]
   },
   {
@@ -17635,9 +17522,9 @@
     "version": "0.1.0",
     "url": "https://pypi.org/project/flyingrat/0.1.0/",
     "imports": [
+      "smtpd",
       "asynchat",
-      "asyncore",
-      "smtpd"
+      "asyncore"
     ]
   },
   {
@@ -17689,9 +17576,9 @@
     ]
   },
   {
-    "project": "foorep-0.1.4",
-    "version": "2",
-    "url": "https://pypi.org/project/foorep-0.1.4/2/",
+    "project": "foorep",
+    "version": "0.1.4-2",
+    "url": "https://pypi.org/project/foorep/0.1.4-2/",
     "imports": [
       "imp"
     ]
@@ -17940,9 +17827,9 @@
     ]
   },
   {
-    "project": "frida-android-M2Crypto",
-    "version": "0.27.0",
-    "url": "https://pypi.org/project/frida-android-M2Crypto/0.27.0/",
+    "project": "frida-android",
+    "version": "M2Crypto-0.27.0",
+    "url": "https://pypi.org/project/frida-android/M2Crypto-0.27.0/",
     "imports": [
       "asyncore",
       "imp"
@@ -18248,22 +18135,22 @@
     "version": "2.0.10",
     "url": "https://pypi.org/project/gaeframework/2.0.10/",
     "imports": [
+      "imp",
+      "crypt",
+      "smtpd",
+      "parser",
+      "asyncore",
+      "macpath",
+      "formatter",
+      "nntplib",
+      "sunau",
+      "imghdr",
       "sndhdr",
       "uu",
       "chunk",
-      "smtpd",
-      "imghdr",
       "pipes",
-      "imp",
-      "aifc",
-      "parser",
-      "asyncore",
-      "crypt",
-      "nntplib",
       "xdrlib",
-      "formatter",
-      "sunau",
-      "macpath"
+      "aifc"
     ]
   },
   {
@@ -18337,8 +18224,8 @@
     "version": "7.1.13",
     "url": "https://pypi.org/project/ganga/7.1.13/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -19181,12 +19068,12 @@
     ]
   },
   {
-    "project": "golismero-2.0.3",
-    "version": "1",
-    "url": "https://pypi.org/project/golismero-2.0.3/1/",
+    "project": "golismero",
+    "version": "2.0.3-1",
+    "url": "https://pypi.org/project/golismero/2.0.3-1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -19218,17 +19105,17 @@
     "version": "1.5.1",
     "url": "https://pypi.org/project/google-appengine/1.5.1/",
     "imports": [
-      "sunau",
-      "macpath",
-      "chunk",
+      "uu",
       "formatter",
       "imghdr",
-      "nntplib",
+      "macpath",
+      "sunau",
+      "aifc",
       "pipes",
       "sndhdr",
-      "xdrlib",
-      "aifc",
-      "uu"
+      "chunk",
+      "nntplib",
+      "xdrlib"
     ]
   },
   {
@@ -19380,10 +19267,10 @@
     "version": "3.4.2",
     "url": "https://pypi.org/project/gpgmailencrypt/3.4.2/",
     "imports": [
-      "uu",
       "asynchat",
       "asyncore",
-      "smtpd"
+      "smtpd",
+      "uu"
     ]
   },
   {
@@ -20372,8 +20259,8 @@
     "version": "1.16",
     "url": "https://pypi.org/project/hmako/1.16/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -20429,8 +20316,8 @@
     "version": "0.15.6",
     "url": "https://pypi.org/project/homely/0.15.6/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -20533,6 +20420,14 @@
     "project": "hszinc",
     "version": "1.2.3",
     "url": "https://pypi.org/project/hszinc/1.2.3/",
+    "imports": [
+      "parser"
+    ]
+  },
+  {
+    "project": "html-table-parser",
+    "version": "python3-0.1.5",
+    "url": "https://pypi.org/project/html-table-parser/python3-0.1.5/",
     "imports": [
       "parser"
     ]
@@ -20740,9 +20635,9 @@
     ]
   },
   {
-    "project": "hwit-core-0.02",
-    "version": "r00672",
-    "url": "https://pypi.org/project/hwit-core-0.02/r00672/",
+    "project": "hwit-core",
+    "version": "0.02-r00672",
+    "url": "https://pypi.org/project/hwit-core/0.02-r00672/",
     "imports": [
       "imp"
     ]
@@ -20970,9 +20865,9 @@
     "version": "0.1.4",
     "url": "https://pypi.org/project/idlespork/0.1.4/",
     "imports": [
+      "parser",
       "imp",
-      "msilib",
-      "parser"
+      "msilib"
     ]
   },
   {
@@ -21160,9 +21055,9 @@
     ]
   },
   {
-    "project": "import-scons-2.5.0",
-    "version": "4",
-    "url": "https://pypi.org/project/import-scons-2.5.0/4/",
+    "project": "import-scons",
+    "version": "2.5.0-4",
+    "url": "https://pypi.org/project/import-scons/2.5.0-4/",
     "imports": [
       "imp"
     ]
@@ -21278,8 +21173,8 @@
     "version": "0.2.2",
     "url": "https://pypi.org/project/indentml/0.2.2/",
     "imports": [
-      "formatter",
-      "parser"
+      "parser",
+      "formatter"
     ]
   },
   {
@@ -21874,9 +21769,9 @@
     ]
   },
   {
-    "project": "isda-1.0.9.win",
-    "version": "amd64",
-    "url": "https://pypi.org/project/isda-1.0.9.win/amd64/",
+    "project": "isda",
+    "version": "1.0.9.win-amd64",
+    "url": "https://pypi.org/project/isda/1.0.9.win-amd64/",
     "imports": [
       "imp"
     ]
@@ -21898,9 +21793,9 @@
     ]
   },
   {
-    "project": "iso-8601",
-    "version": "0.3.0",
-    "url": "https://pypi.org/project/iso-8601/0.3.0/",
+    "project": "iso",
+    "version": "8601-0.3.0",
+    "url": "https://pypi.org/project/iso/8601-0.3.0/",
     "imports": [
       "formatter",
       "parser"
@@ -22063,8 +21958,8 @@
     "version": "2.0",
     "url": "https://pypi.org/project/jaraco.email/2.0/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -22149,9 +22044,9 @@
     ]
   },
   {
-    "project": "jflow-0.4-pre",
-    "version": "alpha",
-    "url": "https://pypi.org/project/jflow-0.4-pre/alpha/",
+    "project": "jflow",
+    "version": "0.4_pre-alpha",
+    "url": "https://pypi.org/project/jflow/0.4_pre-alpha/",
     "imports": [
       "formatter",
       "parser"
@@ -22582,6 +22477,14 @@
     ]
   },
   {
+    "project": "jupyter",
+    "version": "o2-0.2.9",
+    "url": "https://pypi.org/project/jupyter/o2-0.2.9/",
+    "imports": [
+      "pipes"
+    ]
+  },
+  {
     "project": "jupyter-kernel-gap",
     "version": "0.15",
     "url": "https://pypi.org/project/jupyter-kernel-gap/0.15/",
@@ -22609,14 +22512,6 @@
     "project": "jupyter-nbextensions-configurator",
     "version": "0.4.1",
     "url": "https://pypi.org/project/jupyter-nbextensions-configurator/0.4.1/",
-    "imports": [
-      "pipes"
-    ]
-  },
-  {
-    "project": "jupyter-o2",
-    "version": "0.2.9",
-    "url": "https://pypi.org/project/jupyter-o2/0.2.9/",
     "imports": [
       "pipes"
     ]
@@ -22650,7 +22545,6 @@
     "version": "0.0.5",
     "url": "https://pypi.org/project/jupyter-server/0.0.5/",
     "imports": [
-      "pipes",
       "imp"
     ]
   },
@@ -22796,23 +22690,23 @@
     "version": "0.17.5",
     "url": "https://pypi.org/project/ka-lite-static/0.17.5/",
     "imports": [
+      "parser",
       "crypt",
-      "imp",
-      "parser"
+      "imp"
     ]
   },
   {
-    "project": "kaa-base-0.99.2dev-384",
-    "version": "2b73caca",
-    "url": "https://pypi.org/project/kaa-base-0.99.2dev-384/2b73caca/",
+    "project": "kaa-base",
+    "version": "0.99.2dev-384-2b73caca",
+    "url": "https://pypi.org/project/kaa-base/0.99.2dev-384-2b73caca/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "kaa-metadata-0.7.8dev-r4569",
-    "version": "20111003",
-    "url": "https://pypi.org/project/kaa-metadata-0.7.8dev-r4569/20111003/",
+    "project": "kaa-metadata",
+    "version": "0.7.8dev-r4569-20111003",
+    "url": "https://pypi.org/project/kaa-metadata/0.7.8dev-r4569-20111003/",
     "imports": [
       "sndhdr"
     ]
@@ -22902,8 +22796,8 @@
     "version": "1.0.0",
     "url": "https://pypi.org/project/karton/1.0.0/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -22940,10 +22834,10 @@
   },
   {
     "project": "kegbot",
-    "version": "1.2.3",
-    "url": "https://pypi.org/project/kegbot/1.2.3/",
+    "version": "pycore2-1.2.3",
+    "url": "https://pypi.org/project/kegbot/pycore2-1.2.3/",
     "imports": [
-      "imp"
+      "asyncore"
     ]
   },
   {
@@ -23071,10 +22965,10 @@
     "version": "1.9.1",
     "url": "https://pypi.org/project/kivy-django/1.9.1/",
     "imports": [
-      "crypt",
       "imp",
       "smtpd",
-      "asyncore"
+      "asyncore",
+      "crypt"
     ]
   },
   {
@@ -23186,8 +23080,8 @@
     "version": "0.8.8",
     "url": "https://pypi.org/project/knowledge-repo/0.8.8/",
     "imports": [
-      "imp",
-      "imghdr"
+      "imghdr",
+      "imp"
     ]
   },
   {
@@ -23227,12 +23121,12 @@
     "version": "0.12.3",
     "url": "https://pypi.org/project/kolibri/0.12.3/",
     "imports": [
+      "imghdr",
       "imp",
       "parser",
       "pipes",
       "sndhdr",
-      "uu",
-      "imghdr"
+      "uu"
     ]
   },
   {
@@ -23260,17 +23154,17 @@
     ]
   },
   {
-    "project": "komodo-pydbgp",
-    "version": "10.2.2.89895",
-    "url": "https://pypi.org/project/komodo-pydbgp/10.2.2.89895/",
+    "project": "komodo",
+    "version": "python3-dbgp-11.1.1",
+    "url": "https://pypi.org/project/komodo/python3-dbgp-11.1.1/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "komodo-python3-dbgp",
-    "version": "11.1.1",
-    "url": "https://pypi.org/project/komodo-python3-dbgp/11.1.1/",
+    "project": "komodo-pydbgp",
+    "version": "10.2.2.89895",
+    "url": "https://pypi.org/project/komodo-pydbgp/10.2.2.89895/",
     "imports": [
       "imp"
     ]
@@ -23586,22 +23480,22 @@
     "version": "0.022",
     "url": "https://pypi.org/project/latimes-appengine-template/0.022/",
     "imports": [
-      "imp",
-      "asyncore",
       "imghdr",
-      "pipes",
-      "xdrlib",
-      "chunk",
-      "crypt",
-      "macpath",
-      "formatter",
-      "aifc",
-      "nntplib",
       "uu",
+      "chunk",
+      "xdrlib",
       "parser",
       "sunau",
+      "macpath",
+      "nntplib",
+      "pipes",
+      "asyncore",
+      "imp",
+      "crypt",
+      "formatter",
       "smtpd",
-      "sndhdr"
+      "sndhdr",
+      "aifc"
     ]
   },
   {
@@ -23609,8 +23503,8 @@
     "version": "159",
     "url": "https://pypi.org/project/launchpad-buildd/159/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -23815,9 +23709,9 @@
     "version": "0.2.23",
     "url": "https://pypi.org/project/lettuce/0.2.23/",
     "imports": [
-      "smtpd",
       "asyncore",
-      "imp"
+      "imp",
+      "smtpd"
     ]
   },
   {
@@ -23928,9 +23822,9 @@
     ]
   },
   {
-    "project": "libmpsse-1.3.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/libmpsse-1.3.linux/x86_64/",
+    "project": "libmpsse",
+    "version": "1.3",
+    "url": "https://pypi.org/project/libmpsse/1.3/",
     "imports": [
       "imp"
     ]
@@ -24165,9 +24059,9 @@
     "version": "19.5.1",
     "url": "https://pypi.org/project/lino/19.5.1/",
     "imports": [
+      "asyncore",
       "imp",
-      "smtpd",
-      "asyncore"
+      "smtpd"
     ]
   },
   {
@@ -24358,6 +24252,15 @@
     ]
   },
   {
+    "project": "logcat",
+    "version": "color3-0.9.0",
+    "url": "https://pypi.org/project/logcat/color3-0.9.0/",
+    "imports": [
+      "asynchat",
+      "asyncore"
+    ]
+  },
+  {
     "project": "logcat-color",
     "version": "0.6.0",
     "url": "https://pypi.org/project/logcat-color/0.6.0/",
@@ -24543,7 +24446,8 @@
     "version": "0.1.7.post2",
     "url": "https://pypi.org/project/lspreader/0.1.7.post2/",
     "imports": [
-      "xdrlib"
+      "xdrlib",
+      "imp"
     ]
   },
   {
@@ -24608,14 +24512,6 @@
     "project": "luqum",
     "version": "0.7.5",
     "url": "https://pypi.org/project/luqum/0.7.5/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
-    "project": "luqum-0.7.5.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/luqum-0.7.5.linux/x86_64/",
     "imports": [
       "parser"
     ]
@@ -24845,8 +24741,8 @@
     "version": "0.0.4.post3",
     "url": "https://pypi.org/project/mailem/0.0.4.post3/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -24871,8 +24767,8 @@
     "version": "0.8.1",
     "url": "https://pypi.org/project/mailsave/0.8.1/",
     "imports": [
-      "smtpd",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -24913,8 +24809,8 @@
     "version": "0.1.3",
     "url": "https://pypi.org/project/makeauto/0.1.3/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -24929,14 +24825,6 @@
     "project": "mallard-ducktype",
     "version": "1.0.1",
     "url": "https://pypi.org/project/mallard-ducktype/1.0.1/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
-    "project": "mallard-ducktype-1.0.1.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/mallard-ducktype-1.0.1.linux/x86_64/",
     "imports": [
       "parser"
     ]
@@ -25042,8 +24930,8 @@
     "version": "0.1.7",
     "url": "https://pypi.org/project/marcopolo-deployer/0.1.7/",
     "imports": [
-      "spwd",
-      "crypt"
+      "crypt",
+      "spwd"
     ]
   },
   {
@@ -25080,19 +24968,19 @@
     ]
   },
   {
+    "project": "markdown",
+    "version": "py26-support-2.6.2",
+    "url": "https://pypi.org/project/markdown/py26-support-2.6.2/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
     "project": "markdown-embedimages",
     "version": "0.1.4",
     "url": "https://pypi.org/project/markdown-embedimages/0.1.4/",
     "imports": [
       "imghdr"
-    ]
-  },
-  {
-    "project": "markdown-py26-support",
-    "version": "2.6.2",
-    "url": "https://pypi.org/project/markdown-py26-support/2.6.2/",
-    "imports": [
-      "imp"
     ]
   },
   {
@@ -25124,8 +25012,8 @@
     "version": "0.2.4",
     "url": "https://pypi.org/project/markovchain/0.2.4/",
     "imports": [
-      "formatter",
-      "parser"
+      "parser",
+      "formatter"
     ]
   },
   {
@@ -25157,9 +25045,9 @@
     "version": "4.0.2",
     "url": "https://pypi.org/project/marrow.mailer/4.0.2/",
     "imports": [
-      "smtpd",
       "asyncore",
-      "imghdr"
+      "imghdr",
+      "smtpd"
     ]
   },
   {
@@ -25223,8 +25111,8 @@
     "version": "0.9.1",
     "url": "https://pypi.org/project/materials-commons/0.9.1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -25240,8 +25128,8 @@
     "version": "2.0.1",
     "url": "https://pypi.org/project/matlab2cpp/2.0.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -25414,19 +25302,19 @@
     ]
   },
   {
+    "project": "mecab",
+    "version": "python3-0.996.2",
+    "url": "https://pypi.org/project/mecab/python3-0.996.2/",
+    "imports": [
+      "pipes"
+    ]
+  },
+  {
     "project": "mecab-python",
     "version": "0.996",
     "url": "https://pypi.org/project/mecab-python/0.996/",
     "imports": [
       "imp"
-    ]
-  },
-  {
-    "project": "mecab-python3",
-    "version": "0.996.2",
-    "url": "https://pypi.org/project/mecab-python3/0.996.2/",
-    "imports": [
-      "pipes"
     ]
   },
   {
@@ -25466,8 +25354,8 @@
     "version": "0.5.4",
     "url": "https://pypi.org/project/medusa/0.5.4/",
     "imports": [
-      "asyncore",
-      "asynchat"
+      "asynchat",
+      "asyncore"
     ]
   },
   {
@@ -25607,8 +25495,8 @@
     "version": "0.23.0",
     "url": "https://pypi.org/project/metakernel/0.23.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -25898,9 +25786,9 @@
     "version": "2.2.dev20181110142024",
     "url": "https://pypi.org/project/minidjango/2.2.dev20181110142024/",
     "imports": [
+      "asyncore",
       "crypt",
-      "smtpd",
-      "asyncore"
+      "smtpd"
     ]
   },
   {
@@ -25940,8 +25828,8 @@
     "version": "0.1.8",
     "url": "https://pypi.org/project/mio-lang/0.1.8/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -26078,8 +25966,8 @@
     "version": "1.2.0",
     "url": "https://pypi.org/project/mkproj/1.2.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -26135,8 +26023,8 @@
     "version": "0.2.2",
     "url": "https://pypi.org/project/mmailer/0.2.2/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -26217,8 +26105,8 @@
     "version": "0.3.9",
     "url": "https://pypi.org/project/mock-server/0.3.9/",
     "imports": [
-      "imp",
-      "crypt"
+      "crypt",
+      "imp"
     ]
   },
   {
@@ -26523,22 +26411,22 @@
     "version": "0.6.20",
     "url": "https://pypi.org/project/moya/0.6.20/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
     "project": "mozbuild",
-    "version": "0.3",
-    "url": "https://pypi.org/project/mozbuild/0.3/",
+    "version": "0.2",
+    "url": "https://pypi.org/project/mozbuild/0.2/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "mozilla-taar3",
-    "version": "0.4.5",
-    "url": "https://pypi.org/project/mozilla-taar3/0.4.5/",
+    "project": "mozilla",
+    "version": "taar3-0.4.5",
+    "url": "https://pypi.org/project/mozilla/taar3-0.4.5/",
     "imports": [
       "pipes"
     ]
@@ -26861,8 +26749,8 @@
     "version": "1.0.5",
     "url": "https://pypi.org/project/mutils/1.0.5/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -26883,16 +26771,8 @@
   },
   {
     "project": "mxnet-model-server-prometheus",
-    "version": "1.0.3b20190320",
-    "url": "https://pypi.org/project/mxnet-model-server-prometheus/1.0.3b20190320/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "mxnet-model-server-prometheus-1.0.3b20190320.macosx-10.14",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/mxnet-model-server-prometheus-1.0.3b20190320.macosx-10.14/x86_64/",
+    "version": "1.0.3b20190320.macosx-10.14-x86_64",
+    "url": "https://pypi.org/project/mxnet-model-server-prometheus/1.0.3b20190320.macosx-10.14-x86_64/",
     "imports": [
       "imp"
     ]
@@ -26926,8 +26806,8 @@
     "version": "1.28.3",
     "url": "https://pypi.org/project/myokit/1.28.3/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -26943,8 +26823,8 @@
     "version": "0.670",
     "url": "https://pypi.org/project/mypy-mypyc/0.670/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -27487,16 +27367,8 @@
   },
   {
     "project": "networking-mlnx",
-    "version": "2016.1.1",
-    "url": "https://pypi.org/project/networking-mlnx/2016.1.1/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "networking-mlnx-2016.1.1",
-    "version": "1",
-    "url": "https://pypi.org/project/networking-mlnx-2016.1.1/1/",
+    "version": "2015.1.2",
+    "url": "https://pypi.org/project/networking-mlnx/2015.1.2/",
     "imports": [
       "imp"
     ]
@@ -27764,11 +27636,11 @@
     "version": "0.7(3)",
     "url": "https://pypi.org/project/noc/0.7(3)/",
     "imports": [
-      "smtpd",
       "asyncore",
       "crypt",
       "imp",
-      "parser"
+      "parser",
+      "smtpd"
     ]
   },
   {
@@ -28028,8 +27900,8 @@
     "version": "1.16.3",
     "url": "https://pypi.org/project/numpy/1.16.3/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -28049,9 +27921,9 @@
     ]
   },
   {
-    "project": "nunavut-0.1.2",
-    "version": "73",
-    "url": "https://pypi.org/project/nunavut-0.1.2/73/",
+    "project": "nunavut",
+    "version": "0.1.2-73",
+    "url": "https://pypi.org/project/nunavut/0.1.2-73/",
     "imports": [
       "imp"
     ]
@@ -28197,9 +28069,9 @@
     "version": "1.1.1",
     "url": "https://pypi.org/project/obspy/1.1.1/",
     "imports": [
-      "xdrlib",
       "imghdr",
-      "parser"
+      "parser",
+      "xdrlib"
     ]
   },
   {
@@ -28510,26 +28382,14 @@
   },
   {
     "project": "oneline",
-    "version": "v1.0.0RC1",
-    "url": "https://pypi.org/project/oneline/v1.0.0RC1/",
+    "version": "0.6.4-alpha",
+    "url": "https://pypi.org/project/oneline/0.6.4-alpha/",
     "imports": [
-      "imp",
-      "pipes",
       "smtpd",
-      "asynchat",
-      "asyncore"
-    ]
-  },
-  {
-    "project": "oneline-0.6.4",
-    "version": "alpha",
-    "url": "https://pypi.org/project/oneline-0.6.4/alpha/",
-    "imports": [
       "asynchat",
       "asyncore",
       "imp",
-      "pipes",
-      "smtpd"
+      "pipes"
     ]
   },
   {
@@ -28549,9 +28409,9 @@
     ]
   },
   {
-    "project": "ongair-yowsup2",
-    "version": "2.4.48.20",
-    "url": "https://pypi.org/project/ongair-yowsup2/2.4.48.20/",
+    "project": "ongair",
+    "version": "yowsup2-2.4.48.20",
+    "url": "https://pypi.org/project/ongair/yowsup2-2.4.48.20/",
     "imports": [
       "asyncore"
     ]
@@ -28653,17 +28513,17 @@
     ]
   },
   {
-    "project": "openerp-client-5.0.0",
-    "version": "3",
-    "url": "https://pypi.org/project/openerp-client-5.0.0/3/",
+    "project": "openerp-client",
+    "version": "5.0.0-3",
+    "url": "https://pypi.org/project/openerp-client/5.0.0-3/",
     "imports": [
       "parser"
     ]
   },
   {
-    "project": "openerp-server-5.0.0",
-    "version": "3",
-    "url": "https://pypi.org/project/openerp-server-5.0.0/3/",
+    "project": "openerp-server",
+    "version": "5.0.0-3",
+    "url": "https://pypi.org/project/openerp-server/5.0.0-3/",
     "imports": [
       "imp"
     ]
@@ -29059,10 +28919,10 @@
     "version": "1.9.1",
     "url": "https://pypi.org/project/p4a-django/1.9.1/",
     "imports": [
-      "crypt",
-      "imp",
       "smtpd",
-      "asyncore"
+      "asyncore",
+      "crypt",
+      "imp"
     ]
   },
   {
@@ -29302,14 +29162,22 @@
     "version": "1.2.13.4",
     "url": "https://pypi.org/project/paleomix/1.2.13.4/",
     "imports": [
-      "parser",
-      "pipes"
+      "pipes",
+      "parser"
     ]
   },
   {
     "project": "palpao",
     "version": "0.16.0",
     "url": "https://pypi.org/project/palpao/0.16.0/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
+    "project": "panda3d",
+    "version": "blend2bam-0.6",
+    "url": "https://pypi.org/project/panda3d/blend2bam-0.6/",
     "imports": [
       "imp"
     ]
@@ -29466,8 +29334,8 @@
     "version": "0.9.1",
     "url": "https://pypi.org/project/parglare/0.9.1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -29655,14 +29523,6 @@
     ]
   },
   {
-    "project": "pbrlgs-3.1.4.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/pbrlgs-3.1.4.linux/x86_64/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "pc-ble-driver-py",
     "version": "0.11.4",
     "url": "https://pypi.org/project/pc-ble-driver-py/0.11.4/",
@@ -29741,8 +29601,8 @@
     "version": "0.5.4",
     "url": "https://pypi.org/project/pddoc/0.5.4/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -29842,14 +29702,6 @@
     ]
   },
   {
-    "project": "pelicantool-0.7.0.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/pelicantool-0.7.0.linux/x86_64/",
-    "imports": [
-      "parser"
-    ]
-  },
-  {
     "project": "peltak",
     "version": "0.24.6",
     "url": "https://pypi.org/project/peltak/0.24.6/",
@@ -29870,8 +29722,8 @@
     "version": "2.0.4",
     "url": "https://pypi.org/project/pendulum/2.0.4/",
     "imports": [
-      "formatter",
-      "parser"
+      "parser",
+      "formatter"
     ]
   },
   {
@@ -30212,14 +30064,6 @@
     ]
   },
   {
-    "project": "physiq-flatbuffers-1.8.0",
-    "version": "8",
-    "url": "https://pypi.org/project/physiq-flatbuffers-1.8.0/8/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "pi-env",
     "version": "0.1.1",
     "url": "https://pypi.org/project/pi-env/0.1.1/",
@@ -30548,8 +30392,8 @@
     "version": "1.0.3",
     "url": "https://pypi.org/project/pixelpin-auth-core/1.0.3/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -30565,9 +30409,9 @@
     "version": "1.0.0",
     "url": "https://pypi.org/project/plac/1.0.0/",
     "imports": [
+      "asynchat",
       "asyncore",
-      "imp",
-      "asynchat"
+      "imp"
     ]
   },
   {
@@ -31050,8 +30894,8 @@
     "version": "0.0.17",
     "url": "https://pypi.org/project/portia2code/0.0.17/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -31268,8 +31112,8 @@
     "version": "2.1",
     "url": "https://pypi.org/project/pretend-extended/2.1/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -31295,8 +31139,8 @@
     "version": "0.1.6",
     "url": "https://pypi.org/project/pretendsmtp/0.1.6/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -31557,9 +31401,9 @@
     ]
   },
   {
-    "project": "psycopg-postgis2",
-    "version": "0.0.2",
-    "url": "https://pypi.org/project/psycopg-postgis2/0.0.2/",
+    "project": "psycopg",
+    "version": "postgis2-0.0.2",
+    "url": "https://pypi.org/project/psycopg/postgis2-0.0.2/",
     "imports": [
       "imp"
     ]
@@ -31705,8 +31549,8 @@
     "version": "5.2.2",
     "url": "https://pypi.org/project/pur/5.2.2/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -31850,7 +31694,6 @@
     "version": "0.3.2",
     "url": "https://pypi.org/project/py-gql/0.3.2/",
     "imports": [
-      "imp",
       "parser"
     ]
   },
@@ -32210,14 +32053,6 @@
     ]
   },
   {
-    "project": "pySvnManager-0.5.2dev",
-    "version": "r188",
-    "url": "https://pypi.org/project/pySvnManager-0.5.2dev/r188/",
-    "imports": [
-      "crypt"
-    ]
-  },
-  {
     "project": "pya2l",
     "version": "0.0.1",
     "url": "https://pypi.org/project/pya2l/0.0.1/",
@@ -32398,7 +32233,8 @@
     "version": "1.7.2",
     "url": "https://pypi.org/project/pyblish-base/1.7.2/",
     "imports": [
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -32792,8 +32628,8 @@
     "version": "0.0.6a",
     "url": "https://pypi.org/project/pycoreutils/0.0.6a/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -32885,9 +32721,9 @@
     ]
   },
   {
-    "project": "pydataportability.microformats.hcard-0.1dev",
-    "version": "r33",
-    "url": "https://pypi.org/project/pydataportability.microformats.hcard-0.1dev/r33/",
+    "project": "pydataportability.microformats.hcard",
+    "version": "0.1dev-r33",
+    "url": "https://pypi.org/project/pydataportability.microformats.hcard/0.1dev-r33/",
     "imports": [
       "parser"
     ]
@@ -33049,9 +32885,9 @@
     "version": "1.2.0",
     "url": "https://pypi.org/project/pydoop/1.2.0/",
     "imports": [
+      "pipes",
       "xdrlib",
-      "imp",
-      "pipes"
+      "imp"
     ]
   },
   {
@@ -33081,9 +32917,9 @@
     ]
   },
   {
-    "project": "pydsdlgen-1.0.2",
-    "version": "53",
-    "url": "https://pypi.org/project/pydsdlgen-1.0.2/53/",
+    "project": "pydsdlgen",
+    "version": "1.0.2-50",
+    "url": "https://pypi.org/project/pydsdlgen/1.0.2-50/",
     "imports": [
       "imp"
     ]
@@ -33093,9 +32929,9 @@
     "version": "0.5.4",
     "url": "https://pypi.org/project/pydsl/0.5.4/",
     "imports": [
-      "imp",
       "parser",
-      "imghdr"
+      "imghdr",
+      "imp"
     ]
   },
   {
@@ -33287,10 +33123,10 @@
     "version": "1.5.5",
     "url": "https://pypi.org/project/pyftpdlib/1.5.5/",
     "imports": [
-      "crypt",
-      "spwd",
       "asynchat",
-      "asyncore"
+      "asyncore",
+      "crypt",
+      "spwd"
     ]
   },
   {
@@ -33298,10 +33134,10 @@
     "version": "1.4.1",
     "url": "https://pypi.org/project/pyftpdlib-ustcblog/1.4.1/",
     "imports": [
-      "asyncore",
-      "crypt",
       "spwd",
-      "asynchat"
+      "asynchat",
+      "asyncore",
+      "crypt"
     ]
   },
   {
@@ -33422,11 +33258,7 @@
     "version": "1.3.2",
     "url": "https://pypi.org/project/pyglet/1.3.2/",
     "imports": [
-      "parser",
-      "sndhdr",
-      "uu",
-      "imghdr",
-      "imp"
+      "parser"
     ]
   },
   {
@@ -33490,9 +33322,9 @@
     "version": "0.3",
     "url": "https://pypi.org/project/pygrader/0.3/",
     "imports": [
-      "smtpd",
       "asynchat",
-      "asyncore"
+      "asyncore",
+      "smtpd"
     ]
   },
   {
@@ -33636,8 +33468,8 @@
     "version": "0.9",
     "url": "https://pypi.org/project/pyjojo/0.9/",
     "imports": [
-      "pipes",
-      "crypt"
+      "crypt",
+      "pipes"
     ]
   },
   {
@@ -33991,8 +33823,8 @@
     "version": "0.1.14",
     "url": "https://pypi.org/project/pymesh2/0.1.14/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -34057,8 +33889,8 @@
     "version": "1.4",
     "url": "https://pypi.org/project/pymorse/1.4/",
     "imports": [
-      "asynchat",
-      "asyncore"
+      "asyncore",
+      "asynchat"
     ]
   },
   {
@@ -34258,8 +34090,8 @@
     "version": "0.8.1",
     "url": "https://pypi.org/project/pyodps/0.8.1/",
     "imports": [
-      "imp",
-      "formatter"
+      "formatter",
+      "imp"
     ]
   },
   {
@@ -34327,9 +34159,9 @@
     ]
   },
   {
-    "project": "pypds-RyanBalfanz-PyPDS-1.0.1-0",
-    "version": "g275d010",
-    "url": "https://pypi.org/project/pypds-RyanBalfanz-PyPDS-1.0.1-0/g275d010/",
+    "project": "pypds-RyanBalfanz-PyPDS",
+    "version": "1.0.1-0-g275d010",
+    "url": "https://pypi.org/project/pypds-RyanBalfanz-PyPDS/1.0.1-0-g275d010/",
     "imports": [
       "parser"
     ]
@@ -34475,8 +34307,8 @@
     "version": "1.4",
     "url": "https://pypi.org/project/pypub/1.4/",
     "imports": [
-      "imghdr",
-      "imp"
+      "imp",
+      "imghdr"
     ]
   },
   {
@@ -34588,8 +34420,8 @@
     "version": "0.2.0",
     "url": "https://pypi.org/project/pyrake/0.2.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -34665,9 +34497,9 @@
     ]
   },
   {
-    "project": "pyretis-cecam-2016",
-    "version": "0.10.8",
-    "url": "https://pypi.org/project/pyretis-cecam-2016/0.10.8/",
+    "project": "pyretis-cecam",
+    "version": "2016-0.10.8",
+    "url": "https://pypi.org/project/pyretis-cecam/2016-0.10.8/",
     "imports": [
       "imp"
     ]
@@ -34903,8 +34735,8 @@
     "version": "2.0.1",
     "url": "https://pypi.org/project/pysendfile/2.0.1/",
     "imports": [
-      "asyncore",
-      "asynchat"
+      "asynchat",
+      "asyncore"
     ]
   },
   {
@@ -34952,9 +34784,9 @@
     "version": "0.2.2",
     "url": "https://pypi.org/project/pysimavr/0.2.2/",
     "imports": [
-      "asynchat",
       "asyncore",
-      "imp"
+      "imp",
+      "asynchat"
     ]
   },
   {
@@ -35112,16 +34944,8 @@
   },
   {
     "project": "pystatsd",
-    "version": "0.1.10",
-    "url": "https://pypi.org/project/pystatsd/0.1.10/",
-    "imports": [
-      "xdrlib"
-    ]
-  },
-  {
-    "project": "pystatsd-hit9",
-    "version": "0.1.10",
-    "url": "https://pypi.org/project/pystatsd-hit9/0.1.10/",
+    "version": "hit9-0.1.10",
+    "url": "https://pypi.org/project/pystatsd/hit9-0.1.10/",
     "imports": [
       "xdrlib"
     ]
@@ -35235,8 +35059,8 @@
     "version": "4.5.0",
     "url": "https://pypi.org/project/pytest/4.5.0/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -35385,6 +35209,14 @@
     ]
   },
   {
+    "project": "python",
+    "version": "hdf4-0.9.2",
+    "url": "https://pypi.org/project/python/hdf4-0.9.2/",
+    "imports": [
+      "imp"
+    ]
+  },
+  {
     "project": "python-ESL",
     "version": "1.4.18",
     "url": "https://pypi.org/project/python-ESL/1.4.18/",
@@ -35404,14 +35236,6 @@
     "project": "python-afl",
     "version": "0.7.2",
     "url": "https://pypi.org/project/python-afl/0.7.2/",
-    "imports": [
-      "pipes"
-    ]
-  },
-  {
-    "project": "python-afl-ph4",
-    "version": "0.7.2",
-    "url": "https://pypi.org/project/python-afl-ph4/0.7.2/",
     "imports": [
       "pipes"
     ]
@@ -35446,18 +35270,18 @@
     "version": "1.9.15",
     "url": "https://pypi.org/project/python-appengine/1.9.15/",
     "imports": [
-      "sunau",
-      "macpath",
-      "chunk",
+      "uu",
       "nntplib",
       "pipes",
-      "sndhdr",
       "aifc",
-      "imp",
+      "macpath",
+      "chunk",
+      "imghdr",
+      "sndhdr",
+      "sunau",
       "xdrlib",
       "formatter",
-      "imghdr",
-      "uu"
+      "imp"
     ]
   },
   {
@@ -35637,33 +35461,9 @@
     ]
   },
   {
-    "project": "python-gtkmvc3-dlr",
-    "version": "1.0.1",
-    "url": "https://pypi.org/project/python-gtkmvc3-dlr/1.0.1/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "python-hdf4",
-    "version": "0.9.2",
-    "url": "https://pypi.org/project/python-hdf4/0.9.2/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "python-idb",
     "version": "0.5.0",
     "url": "https://pypi.org/project/python-idb/0.5.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "python-idb-0.5.0.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/python-idb-0.5.0.linux/x86_64/",
     "imports": [
       "imp"
     ]
@@ -35694,8 +35494,8 @@
   },
   {
     "project": "python-lambda",
-    "version": "3.2.6",
-    "url": "https://pypi.org/project/python-lambda/3.2.6/",
+    "version": "4dn-0.11.1",
+    "url": "https://pypi.org/project/python-lambda/4dn-0.11.1/",
     "imports": [
       "imp"
     ]
@@ -35717,9 +35517,9 @@
     ]
   },
   {
-    "project": "python-libarchive-3.1.2",
-    "version": "1",
-    "url": "https://pypi.org/project/python-libarchive-3.1.2/1/",
+    "project": "python-libarchive",
+    "version": "3.1.2-1",
+    "url": "https://pypi.org/project/python-libarchive/3.1.2-1/",
     "imports": [
       "imp"
     ]
@@ -35861,14 +35661,6 @@
     ]
   },
   {
-    "project": "python-pyqt5-vstructui",
-    "version": "0.4.0",
-    "url": "https://pypi.org/project/python-pyqt5-vstructui/0.4.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
     "project": "python-qpid-proton",
     "version": "0.28.0",
     "url": "https://pypi.org/project/python-qpid-proton/0.28.0/",
@@ -35881,8 +35673,8 @@
     "version": "2.2.0",
     "url": "https://pypi.org/project/python-saharaclient/2.2.0/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -36006,9 +35798,9 @@
     ]
   },
   {
-    "project": "python-xml-hl7",
-    "version": "1.2.0",
-    "url": "https://pypi.org/project/python-xml-hl7/1.2.0/",
+    "project": "python-xml",
+    "version": "hl7-1.2.0",
+    "url": "https://pypi.org/project/python-xml/hl7-1.2.0/",
     "imports": [
       "parser"
     ]
@@ -36575,9 +36367,9 @@
     ]
   },
   {
-    "project": "qpid-python-1.36.0",
-    "version": "1",
-    "url": "https://pypi.org/project/qpid-python-1.36.0/1/",
+    "project": "qpid-python",
+    "version": "1.36.0-1",
+    "url": "https://pypi.org/project/qpid-python/1.36.0-1/",
     "imports": [
       "parser"
     ]
@@ -36603,11 +36395,11 @@
     "version": "0.1.5",
     "url": "https://pypi.org/project/qss-debugger/0.1.5/",
     "imports": [
+      "uu",
       "imghdr",
       "imp",
       "parser",
-      "sndhdr",
-      "uu"
+      "sndhdr"
     ]
   },
   {
@@ -36646,14 +36438,6 @@
     "project": "qtile",
     "version": "0.13.0",
     "url": "https://pypi.org/project/qtile/0.13.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "qtile-ramnes6",
-    "version": "0.13.1",
-    "url": "https://pypi.org/project/qtile-ramnes6/0.13.1/",
     "imports": [
       "imp"
     ]
@@ -36864,8 +36648,8 @@
     "version": "1.9",
     "url": "https://pypi.org/project/radiant/1.9/",
     "imports": [
-      "imp",
-      "msilib"
+      "msilib",
+      "imp"
     ]
   },
   {
@@ -37059,8 +36843,8 @@
     "version": "1.8.1",
     "url": "https://pypi.org/project/rbf/1.8.1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -37198,8 +36982,8 @@
     "version": "0.1.1",
     "url": "https://pypi.org/project/recat-color/0.1.1/",
     "imports": [
-      "asynchat",
-      "asyncore"
+      "asyncore",
+      "asynchat"
     ]
   },
   {
@@ -37455,14 +37239,14 @@
     "version": "5.0.0",
     "url": "https://pypi.org/project/replybot/5.0.0/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
-    "project": "repo-checker-0.2.0",
-    "version": "1",
-    "url": "https://pypi.org/project/repo-checker-0.2.0/1/",
+    "project": "repo-checker",
+    "version": "0.2.0-1",
+    "url": "https://pypi.org/project/repo-checker/0.2.0-1/",
     "imports": [
       "imp"
     ]
@@ -37688,8 +37472,8 @@
     "version": "2.8.0",
     "url": "https://pypi.org/project/restfulpy/2.8.0/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -38033,14 +37817,6 @@
     "project": "rocky",
     "version": "1.0.1",
     "url": "https://pypi.org/project/rocky/1.0.1/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "rocky-1.0.1.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/rocky-1.0.1.linux/x86_64/",
     "imports": [
       "imp"
     ]
@@ -38456,9 +38232,9 @@
     ]
   },
   {
-    "project": "saga-bigjob-0.50b-10",
-    "version": "gfdf8243",
-    "url": "https://pypi.org/project/saga-bigjob-0.50b-10/gfdf8243/",
+    "project": "saga-bigjob",
+    "version": "0.50b-10-gfdf8243",
+    "url": "https://pypi.org/project/saga-bigjob/0.50b-10-gfdf8243/",
     "imports": [
       "imp"
     ]
@@ -38526,10 +38302,10 @@
     "version": "2019.2.0",
     "url": "https://pypi.org/project/salt/2019.2.0/",
     "imports": [
-      "pipes",
-      "spwd",
       "crypt",
-      "imp"
+      "imp",
+      "pipes",
+      "spwd"
     ]
   },
   {
@@ -38569,10 +38345,10 @@
     "version": "2019.2.0",
     "url": "https://pypi.org/project/salt-ssh/2019.2.0/",
     "imports": [
-      "pipes",
-      "spwd",
       "crypt",
-      "imp"
+      "imp",
+      "pipes",
+      "spwd"
     ]
   },
   {
@@ -38637,8 +38413,8 @@
     "version": "2.2",
     "url": "https://pypi.org/project/sapass/2.2/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -38766,8 +38542,8 @@
     "version": "0.3.4",
     "url": "https://pypi.org/project/saxo/0.3.4/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -38803,9 +38579,9 @@
     ]
   },
   {
-    "project": "sc0ns-2.2.0",
-    "version": "1",
-    "url": "https://pypi.org/project/sc0ns-2.2.0/1/",
+    "project": "sc0ns",
+    "version": "2.2.0-1",
+    "url": "https://pypi.org/project/sc0ns/2.2.0-1/",
     "imports": [
       "imp"
     ]
@@ -38832,6 +38608,15 @@
     "url": "https://pypi.org/project/scalr-ctl/7.14.2/",
     "imports": [
       "parser"
+    ]
+  },
+  {
+    "project": "scalyr-agent",
+    "version": "2-2.0.48",
+    "url": "https://pypi.org/project/scalyr-agent/2-2.0.48/",
+    "imports": [
+      "asyncore",
+      "imp"
     ]
   },
   {
@@ -38905,8 +38690,8 @@
     "version": "1.0.4",
     "url": "https://pypi.org/project/schedular/1.0.4/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -38990,14 +38775,6 @@
     ]
   },
   {
-    "project": "scikit-multilearn-0.2.0.linux",
-    "version": "x86_64",
-    "url": "https://pypi.org/project/scikit-multilearn-0.2.0.linux/x86_64/",
-    "imports": [
-      "pipes"
-    ]
-  },
-  {
     "project": "scikit-nano",
     "version": "0.3.21",
     "url": "https://pypi.org/project/scikit-nano/0.3.21/",
@@ -39022,9 +38799,9 @@
     ]
   },
   {
-    "project": "scikit-tensor-py3",
-    "version": "0.2.1",
-    "url": "https://pypi.org/project/scikit-tensor-py3/0.2.1/",
+    "project": "scikit-tensor",
+    "version": "py3-0.2.1",
+    "url": "https://pypi.org/project/scikit-tensor/py3-0.2.1/",
     "imports": [
       "imp"
     ]
@@ -39267,8 +39044,8 @@
     "version": "0.3",
     "url": "https://pypi.org/project/sdataflow/0.3/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -39329,9 +39106,9 @@
     ]
   },
   {
-    "project": "seamicro-ml2",
-    "version": "0.1.1",
-    "url": "https://pypi.org/project/seamicro-ml2/0.1.1/",
+    "project": "seamicro",
+    "version": "ml2-0.1.1",
+    "url": "https://pypi.org/project/seamicro/ml2-0.1.1/",
     "imports": [
       "imp"
     ]
@@ -39527,9 +39304,9 @@
     "version": "9.1.1",
     "url": "https://pypi.org/project/sentry/9.1.1/",
     "imports": [
-      "smtpd",
       "asyncore",
-      "imp"
+      "imp",
+      "smtpd"
     ]
   },
   {
@@ -39560,14 +39337,6 @@
     "project": "seshet",
     "version": "0.1.0_3",
     "url": "https://pypi.org/project/seshet/0.1.0_3/",
-    "imports": [
-      "asyncore"
-    ]
-  },
-  {
-    "project": "seshet-0.1.0",
-    "version": "3",
-    "url": "https://pypi.org/project/seshet-0.1.0/3/",
     "imports": [
       "asyncore"
     ]
@@ -39843,11 +39612,11 @@
     "version": "0.0.2",
     "url": "https://pypi.org/project/sickchill/0.0.2/",
     "imports": [
-      "parser",
-      "sndhdr",
       "uu",
       "imghdr",
-      "imp"
+      "imp",
+      "parser",
+      "sndhdr"
     ]
   },
   {
@@ -39871,8 +39640,8 @@
     "version": "1.1.0",
     "url": "https://pypi.org/project/signac/1.1.0/",
     "imports": [
-      "crypt",
-      "imp"
+      "imp",
+      "crypt"
     ]
   },
   {
@@ -40386,8 +40155,8 @@
     "version": "0.2.1",
     "url": "https://pypi.org/project/smart-imports/0.2.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -40544,17 +40313,17 @@
     ]
   },
   {
-    "project": "social-auth-core",
-    "version": "3.1.0",
-    "url": "https://pypi.org/project/social-auth-core/3.1.0/",
+    "project": "social-auth",
+    "version": "core2-1.7.0",
+    "url": "https://pypi.org/project/social-auth/core2-1.7.0/",
     "imports": [
       "imp"
     ]
   },
   {
-    "project": "social-auth-core2",
-    "version": "1.7.0",
-    "url": "https://pypi.org/project/social-auth-core2/1.7.0/",
+    "project": "social-auth-core",
+    "version": "3.1.0",
+    "url": "https://pypi.org/project/social-auth-core/3.1.0/",
     "imports": [
       "imp"
     ]
@@ -40699,9 +40468,9 @@
     ]
   },
   {
-    "project": "soy-2012-12-21",
-    "version": "p2",
-    "url": "https://pypi.org/project/soy-2012-12-21/p2/",
+    "project": "soy",
+    "version": "2012-12-21-p2",
+    "url": "https://pypi.org/project/soy/2012-12-21-p2/",
     "imports": [
       "imp"
     ]
@@ -40727,8 +40496,8 @@
     "version": "2.1.4",
     "url": "https://pypi.org/project/spacy/2.1.4/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -40801,9 +40570,9 @@
     "version": "0.7.16",
     "url": "https://pypi.org/project/spaudio/0.7.16/",
     "imports": [
+      "imp",
       "sunau",
-      "aifc",
-      "imp"
+      "aifc"
     ]
   },
   {
@@ -41007,9 +40776,9 @@
     ]
   },
   {
-    "project": "sphinxcontrib-mockautodoc-0.0.1dev",
-    "version": "20130518",
-    "url": "https://pypi.org/project/sphinxcontrib-mockautodoc-0.0.1dev/20130518/",
+    "project": "sphinxcontrib-mockautodoc",
+    "version": "0.0.1dev-20130518",
+    "url": "https://pypi.org/project/sphinxcontrib-mockautodoc/0.0.1dev-20130518/",
     "imports": [
       "imp"
     ]
@@ -41308,8 +41077,8 @@
     "version": "0.5.0alpha",
     "url": "https://pypi.org/project/squash/0.5.0alpha/",
     "imports": [
-      "crypt",
-      "imp"
+      "imp",
+      "crypt"
     ]
   },
   {
@@ -41365,8 +41134,8 @@
     "version": "0.78.5",
     "url": "https://pypi.org/project/sshuttle/0.78.5/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -41406,8 +41175,7 @@
     "version": "1.2.3",
     "url": "https://pypi.org/project/stacklesslib/1.2.3/",
     "imports": [
-      "asyncore",
-      "imp"
+      "asyncore"
     ]
   },
   {
@@ -41672,8 +41440,8 @@
     "version": "0.1",
     "url": "https://pypi.org/project/stone/0.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -42017,9 +41785,9 @@
     "version": "0.9.8",
     "url": "https://pypi.org/project/sunpy/0.9.8/",
     "imports": [
-      "imp",
       "parser",
-      "xdrlib"
+      "xdrlib",
+      "imp"
     ]
   },
   {
@@ -42050,30 +41818,6 @@
     "project": "superset",
     "version": "0.28.1",
     "url": "https://pypi.org/project/superset/0.28.1/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "superset-d1",
-    "version": "0.26.3",
-    "url": "https://pypi.org/project/superset-d1/0.26.3/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "superset-d2",
-    "version": "0.26.3",
-    "url": "https://pypi.org/project/superset-d2/0.26.3/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "superset-d3",
-    "version": "0.26.3",
-    "url": "https://pypi.org/project/superset-d3/0.26.3/",
     "imports": [
       "imp"
     ]
@@ -42647,8 +42391,8 @@
     "version": "4.5.1",
     "url": "https://pypi.org/project/taurus/4.5.1/",
     "imports": [
-      "imp",
-      "formatter"
+      "formatter",
+      "imp"
     ]
   },
   {
@@ -42849,8 +42593,8 @@
     "version": "1.8.1",
     "url": "https://pypi.org/project/tensorflow-gpu-macosx/1.8.1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -43003,6 +42747,7 @@
     "version": "3.0.4",
     "url": "https://pypi.org/project/testinfra/3.0.4/",
     "imports": [
+      "crypt",
       "pipes"
     ]
   },
@@ -43251,9 +42996,9 @@
     ]
   },
   {
-    "project": "throw-0.1-9",
-    "version": "g9350",
-    "url": "https://pypi.org/project/throw-0.1-9/g9350/",
+    "project": "throw",
+    "version": "0.1-9-g9350",
+    "url": "https://pypi.org/project/throw/0.1-9-g9350/",
     "imports": [
       "formatter"
     ]
@@ -43480,10 +43225,10 @@
     "version": "1.7.8",
     "url": "https://pypi.org/project/tocka-Django/1.7.8/",
     "imports": [
-      "smtpd",
-      "asyncore",
       "crypt",
-      "imp"
+      "imp",
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -43507,15 +43252,6 @@
     "version": "3.19.0",
     "url": "https://pypi.org/project/toil/3.19.0/",
     "imports": [
-      "pipes"
-    ]
-  },
-  {
-    "project": "toil-ionox0",
-    "version": "0.0.4",
-    "url": "https://pypi.org/project/toil-ionox0/0.0.4/",
-    "imports": [
-      "imp",
       "pipes"
     ]
   },
@@ -43588,8 +43324,8 @@
     "version": "1.0b224",
     "url": "https://pypi.org/project/topicexplorer/1.0b224/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -43845,8 +43581,8 @@
     "version": "1.6.0",
     "url": "https://pypi.org/project/trigger/1.6.0/",
     "imports": [
-      "crypt",
-      "parser"
+      "parser",
+      "crypt"
     ]
   },
   {
@@ -44648,8 +44384,8 @@
     "version": "4.0.9",
     "url": "https://pypi.org/project/usgs-shakecast/4.0.9/",
     "imports": [
-      "asyncore",
-      "smtpd"
+      "smtpd",
+      "asyncore"
     ]
   },
   {
@@ -44753,14 +44489,6 @@
     "project": "vaex-distributed",
     "version": "0.3.0",
     "url": "https://pypi.org/project/vaex-distributed/0.3.0/",
-    "imports": [
-      "imp"
-    ]
-  },
-  {
-    "project": "vaex-hdf5",
-    "version": "0.4.0",
-    "url": "https://pypi.org/project/vaex-hdf5/0.4.0/",
     "imports": [
       "imp"
     ]
@@ -44875,8 +44603,8 @@
     "version": "3.0.2",
     "url": "https://pypi.org/project/variant-tools/3.0.2/",
     "imports": [
-      "imp",
-      "pipes"
+      "pipes",
+      "imp"
     ]
   },
   {
@@ -45048,9 +44776,9 @@
     ]
   },
   {
-    "project": "versile-python3",
-    "version": "0.8.5",
-    "url": "https://pypi.org/project/versile-python3/0.8.5/",
+    "project": "versile",
+    "version": "python3-0.8.5",
+    "url": "https://pypi.org/project/versile/python3-0.8.5/",
     "imports": [
       "imp"
     ]
@@ -45092,8 +44820,8 @@
     "version": "0.11.0",
     "url": "https://pypi.org/project/verto/0.11.0/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -45182,8 +44910,7 @@
     "version": "16.6.0",
     "url": "https://pypi.org/project/virtualenv/16.6.0/",
     "imports": [
-      "imp",
-      "pipes"
+      "imp"
     ]
   },
   {
@@ -45215,8 +44942,8 @@
     "version": "16.2.0",
     "url": "https://pypi.org/project/virtualenvy/16.2.0/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -45609,9 +45336,9 @@
     "version": "1.0.1",
     "url": "https://pypi.org/project/wav2vec/1.0.1/",
     "imports": [
-      "sndhdr",
       "aifc",
-      "formatter"
+      "formatter",
+      "sndhdr"
     ]
   },
   {
@@ -45797,9 +45524,9 @@
     "version": "1.5",
     "url": "https://pypi.org/project/weboob/1.5/",
     "imports": [
-      "imp",
       "smtpd",
-      "asyncore"
+      "asyncore",
+      "imp"
     ]
   },
   {
@@ -46017,8 +45744,8 @@
     "version": "1",
     "url": "https://pypi.org/project/wiki440-sqlite-database/1/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -46042,9 +45769,9 @@
     "version": "5.5.1",
     "url": "https://pypi.org/project/willie/5.5.1/",
     "imports": [
-      "asyncore",
       "imp",
-      "asynchat"
+      "asynchat",
+      "asyncore"
     ]
   },
   {
@@ -46190,8 +45917,8 @@
     "version": "2.0.1",
     "url": "https://pypi.org/project/wooqi/2.0.1/",
     "imports": [
-      "parser",
-      "imp"
+      "imp",
+      "parser"
     ]
   },
   {
@@ -46231,8 +45958,8 @@
     "version": "1.14",
     "url": "https://pypi.org/project/wptrunner/1.14/",
     "imports": [
-      "imp",
-      "parser"
+      "parser",
+      "imp"
     ]
   },
   {
@@ -46360,8 +46087,8 @@
     "version": "2.0.15",
     "url": "https://pypi.org/project/x84/2.0.15/",
     "imports": [
-      "pipes",
-      "imp"
+      "imp",
+      "pipes"
     ]
   },
   {
@@ -46586,8 +46313,8 @@
     "version": "0.9.43",
     "url": "https://pypi.org/project/xraylarch/0.9.43/",
     "imports": [
-      "imp",
-      "xdrlib"
+      "xdrlib",
+      "imp"
     ]
   },
   {
@@ -47336,9 +47063,9 @@
     ]
   },
   {
-    "project": "zuper-nodes-python2",
-    "version": "2.1.3",
-    "url": "https://pypi.org/project/zuper-nodes-python2/2.1.3/",
+    "project": "zuper-nodes",
+    "version": "python2-2.1.3",
+    "url": "https://pypi.org/project/zuper-nodes/python2-2.1.3/",
     "imports": [
       "imp"
     ]

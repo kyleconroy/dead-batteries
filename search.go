@@ -17,12 +17,6 @@ import (
 	"time"
 )
 
-func main() {
-	if err := run(); err != nil {
-		log.Fatal(err)
-	}
-}
-
 type Parser struct {
 	lock    sync.RWMutex
 	wg      sync.WaitGroup
@@ -163,7 +157,7 @@ func (p *Parser) Parse(info map[string]int, path string) error {
 	return nil
 }
 
-func run() error {
+func search() error {
 	pkgs := make(chan string)
 	var results map[string]map[string]int
 

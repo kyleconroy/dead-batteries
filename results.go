@@ -7,16 +7,11 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
 )
-
-func main() {
-	if err := run(); err != nil {
-		log.Fatal(err)
-	}
-}
 
 type Info struct {
 	Package string   `json:"project"`
@@ -25,7 +20,74 @@ type Info struct {
 	Imports []string `json:"imports"`
 }
 
-func run() error {
+func trimFormat(pkgver string) string {
+	switch {
+	case strings.HasSuffix(pkgver, ".whl"):
+		a := strings.Split(pkgver, "-")
+		a = a[:len(a)-1] // Pop off any.whl
+		a = a[:len(a)-1] // Pop off none
+		a = a[:len(a)-1] // Pop off py*
+		return strings.Join(a, "-")
+	case strings.HasSuffix(pkgver, ".tar.gz"):
+		return strings.Replace(pkgver, ".tar.gz", "", 1)
+	case strings.HasSuffix(pkgver, ".egg"):
+		a := strings.Split(pkgver, "-")
+		a = a[:len(a)-1] // Pop off py*.egg
+		return strings.Join(a, "-")
+	case strings.HasSuffix(pkgver, ".zip"):
+		return strings.Replace(pkgver, ".zip", "", 1)
+	default:
+		panic("unknown format: " + pkgver)
+	}
+}
+
+func split(input string) (string, string) {
+	input = strings.Replace(input, ".linux-x86_64", "", -1)
+
+	a := strings.Split(input, "-")
+	var pkg, version string
+
+	if len(a) == 1 {
+		pkg = input
+	} else if len(a) == 2 {
+		pkg = a[0]
+		version = a[1]
+	} else {
+		for i, part := range a {
+			// The version can never be the first part
+			if i == 0 {
+				continue
+			}
+			containsNumber, _ := regexp.MatchString(`[0-9]+`, part)
+			// containsNumberDot := containsNumber && strings.Contains(part, ".")
+
+			_, err := strconv.Atoi(part)
+			containsAllNumbers := err == nil
+
+			if containsNumber || containsAllNumbers {
+				pkg = strings.Join(a[:i], "-")
+				version = strings.Join(a[i:], "-")
+				break
+			}
+		}
+
+		if pkg == "" && a[len(a)-1] == "dev" {
+			pkg = strings.Join(a[:len(a)-1], "-")
+			version = "dev"
+		}
+
+		if pkg == "" {
+			pkg = strings.Join(a, "-")
+		}
+	}
+
+	// Underscores and dashes are treated as the same in package names
+	pkg = strings.Replace(pkg, "_", "-", -1)
+	pkg = strings.Replace(pkg, " ", "-", -1)
+	return pkg, version
+}
+
+func genpkg() error {
 	var results map[string]map[string]int
 	blob, err := ioutil.ReadFile("results.json")
 	if err != nil {
@@ -40,40 +102,13 @@ func run() error {
 
 	for name, imports := range results {
 		oparts := strings.SplitN(name, "/", 2)
-		pkgver := oparts[0]
+		pkgver := trimFormat(oparts[0])
+		pkg, version := split(pkgver)
 
-		switch {
-		case strings.HasSuffix(pkgver, ".whl"):
-			a := strings.Split(pkgver, "-")
-			a = a[:len(a)-1] // Pop off any.whl
-			a = a[:len(a)-1] // Pop off none
-			a = a[:len(a)-1] // Pop off py*
-			pkgver = strings.Join(a, "-")
-		case strings.HasSuffix(pkgver, ".tar.gz"):
-			pkgver = strings.Replace(pkgver, ".tar.gz", "", 1)
-		case strings.HasSuffix(pkgver, ".egg"):
-			a := strings.Split(pkgver, "-")
-			a = a[:len(a)-1] // Pop off py*.egg
-			pkgver = strings.Join(a, "-")
-		case strings.HasSuffix(pkgver, ".zip"):
-			pkgver = strings.Replace(pkgver, ".zip", "", 1)
-		default:
-			panic("unknown format: " + pkgver)
+		if pkg == "" {
+			log.Printf("parser err: %s", oparts[0])
+			continue
 		}
-
-		a := strings.Split(pkgver, "-")
-		var pkg, version string
-
-		if len(a) == 1 {
-			pkg = pkgver
-		} else {
-			version, a = a[len(a)-1], a[:len(a)-1]
-			pkg = strings.Join(a, "-")
-		}
-
-		// Underscores and dashes are treated as the same in package names
-		pkg = strings.Replace(pkg, "_", "-", -1)
-
 		if _, ok := pkgs[pkg]; ok {
 			continue
 		}
