@@ -11,8 +11,8 @@ func main() {
 	switch flag.Arg(0) {
 	case "mirror":
 		err = mirror()
-	case "genpkg":
-		err = genpkg()
+	case "scan":
+		err = scan()
 	case "stats":
 		err = stats()
 	}

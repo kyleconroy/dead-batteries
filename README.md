@@ -1,5 +1,10 @@
 # Dead Batteries
 
+venv/bin/pip install flask
+venv/bin/pip install gunicorn
+venv/bin/pip install gunicorn[gevent]
+venv/bin/gunicorn -k gevent -w 20 -b 127.0.0.1:4000 imports:app
+
 [PEP 594](https://www.python.org/dev/peps/pep-0594/) outlines the plan to
 deprecate and remove packages from the Python standard library. If accepted in
 its current form, PEP 594 will break 3.2% of all published packages on PyPI.

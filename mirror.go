@@ -18,13 +18,16 @@ import (
 
 var errNotFound = errors.New("not found")
 
-func download(uri, filename string) error {
-	resp, err := http.Get(uri)
+func download(client *http.Client, uri, filename string) error {
+	resp, err := client.Get(uri)
 	if err != nil {
 		return fmt.Errorf("%s: %s", uri, err)
 	}
 	if resp.StatusCode == http.StatusNotFound {
 		return errNotFound
+	}
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("expected 200, not %d", resp.StatusCode)
 	}
 	defer resp.Body.Close()
 	f, err := os.Create(filename)
@@ -42,7 +45,7 @@ func download(uri, filename string) error {
 func downloadIndex() error {
 	// Download all packages on PyPI
 	if _, err := os.Stat("simple.html"); err != nil {
-		return download("https://pypi.org/simple/", "simple.html")
+		return download(http.DefaultClient, "https://pypi.org/simple/", "simple.html")
 	}
 	return nil
 }
@@ -80,16 +83,32 @@ func packageNames() ([]string, error) {
 }
 
 type Release struct {
+	PackageType   string `json:"packagetype"`
 	PythonVersion string `json:"python_version"`
+	URL           string `json:"url"`
 }
 
 type PackageInfo struct {
 	Classifiers []string `json:"classifiers"`
+	Version     string   `json:"version"`
 }
 
 type PyPI struct {
 	Info     PackageInfo          `json:"info"`
 	Versions map[string][]Release `json:"releases"`
+}
+
+func (p PyPI) LatestSource() (string, string, error) {
+	recent, ok := p.Versions[p.Info.Version]
+	if !ok {
+		return "", "", fmt.Errorf("latest version has no release")
+	}
+	for _, r := range recent {
+		if r.PythonVersion == "source" || r.PackageType == "bdist_wheel" {
+			return r.URL, p.Info.Version, nil
+		}
+	}
+	return "", "", fmt.Errorf("no source distribution")
 }
 
 func (p PyPI) SupportsPython3() bool {
@@ -256,7 +275,7 @@ func downloadMetadata() error {
 				}
 				log.Printf("fetch package metadata: %s", p)
 				uri := fmt.Sprintf("https://pypi.python.org/pypi/%s/json", p)
-				err := download(uri, filename)
+				err := download(http.DefaultClient, uri, filename)
 				if err == errNotFound {
 					continue
 				}
@@ -313,7 +332,7 @@ func filterPackages() error {
 	return ioutil.WriteFile("python3-packages.json", blob, 0644)
 }
 
-func redo() error {
+func mirror() error {
 	if err := downloadIndex(); err != nil {
 		return err
 	}

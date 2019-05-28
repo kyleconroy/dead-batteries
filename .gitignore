@@ -1,5 +1,6 @@
 meta
 pypi
+venv
 simple.html
 results.json
 python3-packages.json

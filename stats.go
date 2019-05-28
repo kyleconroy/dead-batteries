@@ -2,45 +2,59 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
+	"os"
+	"path/filepath"
 )
 
 func stats() error {
-	var packages []Info
-	blob, err := ioutil.ReadFile("packages.json")
+	pkgs, err := packageNames()
 	if err != nil {
 		return err
 	}
-	if err := json.Unmarshal(blob, &packages); err != nil {
+
+	valid := 0
+	for _, p := range pkgs {
+		filename := filepath.Join("meta", p+".json")
+		if _, err := os.Stat(filename); err == nil {
+			valid += 1
+		}
+	}
+
+	var py3 []string
+	blob, err := ioutil.ReadFile("python3-packages.json")
+	if err != nil {
 		return err
 	}
-	var py3 int
-	for _, p := range packages {
-		url := fmt.Sprintf("https://pypi.python.org/pypi/%s/%s/json", p.Package, p.Version)
-		resp, err := http.Get(url)
-		if err != nil {
-			return fmt.Errorf("%s %s", url, err)
+	if err := json.Unmarshal(blob, &py3); err != nil {
+		return err
+	}
+
+	var results map[string]result
+	var broken int
+	var errors int
+	blob, err = ioutil.ReadFile("results.json")
+	if err != nil {
+		return err
+	}
+	if err := json.Unmarshal(blob, &results); err != nil {
+		return err
+	}
+	for _, r := range results {
+		if len(r.Imports) > 0 {
+			broken += 1
 		}
-		if resp.StatusCode == http.StatusNotFound {
-			log.Printf("package=%s version=%s err=not-found", p.Package, p.Version)
-			continue
-		}
-		defer resp.Body.Close()
-		var pypi PyPI
-		dec := json.NewDecoder(resp.Body)
-		if err := dec.Decode(&pypi); err != nil {
-			log.Printf("package=%s version=%s err=%s", p.Package, p.Version, err)
-			continue
-			// return fmt.Errorf("decode error %s: %s", p.Package, err)
-		}
-		if pypi.SupportsPython3() {
-			py3 += 1
+		if len(r.Errors) > 0 {
+			errors += 1
 		}
 	}
-	log.Printf("Total packages: %d", len(packages))
-	log.Printf("Python 3 packages: %d", py3)
+
+	log.Printf("  total packages: %d", len(pkgs))
+	log.Printf("  valid packages: %d", valid)
+	log.Printf("python3 packages: %d", len(py3))
+	log.Printf("scanned packages: %d", len(results))
+	log.Printf(" broken packages: %d", broken)
+	log.Printf("errored packages: %d", errors)
 	return nil
 }
