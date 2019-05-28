@@ -244,6 +244,7 @@ func (p *Parser) Parse(info, errors map[string]int, path string) error {
 }
 
 type result struct {
+	Package string         `json:"package,omitempty"`
 	URL     string         `json:"url"`
 	Version string         `json:"version"`
 	Imports map[string]int `json:"imports,omitempty"`

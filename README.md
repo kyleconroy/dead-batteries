@@ -1,18 +1,21 @@
 # Dead Batteries
 
-venv/bin/pip install flask
-venv/bin/pip install gunicorn
-venv/bin/pip install gunicorn[gevent]
-venv/bin/gunicorn -k gevent -w 20 -b 127.0.0.1:4000 imports:app
-
 [PEP 594](https://www.python.org/dev/peps/pep-0594/) outlines the plan to
 deprecate and remove packages from the Python standard library. If accepted in
-its current form, PEP 594 will break 3.2% of all published packages on PyPI.
+its current form, PEP 594 will break 3.8% of all Python 3 packages on PyPI.
 
 ## Results
 
-As of May 25, 2019 there are 5840 packages on PyPI (out of 181,268) that import
-packages deprecated by PEP 594.
+As of May 2019 there are 3604 Python 3 packages on PyPI (out of 94,680) that
+import packages deprecated by PEP 594.
+
+```
+  total packages: 181225
+  valid packages: 178642
+python3 packages: 94680
+scanned packages: 92779
+ broken packages: 3604
+```
 
 ## Instructions
 
@@ -38,19 +41,43 @@ TODO: Provide an example
 * `meta/*.json`: contains package metadata for each package
 * `python3-packages.json`: contains a list of packages that support Python3
 
-With a complete mirror, you're now ready to process the packages. In a screen
-session, run the search program.
-
-TODO: Add current stats
-94680 packages
+With a complete mirror, you're now ready to scan packages for imports of
+deprecated packages. Open up a new shell to install and run the Python service.
 
 ```
-./dead-battery scan-imports
+python3 -m venv venv
+venv/bin/pip install flask
+venv/bin/pip install gunicorn
+venv/bin/pip install gunicorn[gevent]
+venv/bin/gunicorn -k gevent -w 10 -b 127.0.0.1:4000 imports:app
 ```
 
-This took a few days to run, as it parses every Python file in each package. I
-let this run on an instance on Google Cloud, so I didn't really care that it
-was slow. The output is continually saved to `results.json`.
+The service exposes a HTTP/JSON interface to the `ast` package. It parses a
+given file and returns any deprecated imports as well as parsing errors. 
+
+```
+// INPUT
+{
+  "path": "/path/to/python/file"
+}
+
+// OUTPUT
+{ 
+  "imports": {
+    "imp": 2
+  },
+  "errors": {
+    "syntax-error": 2
+  }
+}
+```
+
+With that running, you can now start the scan. On my laptop, the scan took
+about an hour to complete. The output is continually saved to `results.json`.
+
+```
+./dead-battery scan
+```
 
 Once the search process is complete, generate the package statistics. 
 
@@ -69,5 +96,5 @@ affected by PEP 594.
 ```
 >>> import json
 >>> len(json.load(open('packages.json')))
-5840
+3604
 ```
