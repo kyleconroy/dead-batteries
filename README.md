@@ -98,3 +98,37 @@ affected by PEP 594.
 >>> len(json.load(open('packages.json')))
 3604
 ```
+
+## Methodology 
+
+Since PEP 594 only affects Python 3, I needed to filter out packages that don't
+support Python 3. For each package, I first looked for any classifiers with the
+prefix `Programming Language :: Python :: 3`. Next, I checked the
+`python_version` of the latest release. It's a bit messy, but the code to do so
+can be found [here][mirror].
+
+```json
+{
+    "info": {
+        "classifiers": [
+            "Programming Language :: Python :: 2.7",
+            "Programming Language :: Python :: 3"
+        ],
+        "version": "2.22.0"
+    },
+    "releases": {
+        "2.22.0": [
+            {
+                "packagetype": "bdist_wheel",
+                "python_version": "py2.py3",
+                "url": "https://files.pythonhosted.org/.../requests-2.22.0-py2.py3-none-any.whl"
+            }
+        ]
+    }
+}
+```
+
+If you know a better way to check for Python 3 compatibility, please reach out
+or open an issue.
+
+[mirror]: https://github.com/kyleconroy/dead-batteries/blob/master/mirror.go#L114
