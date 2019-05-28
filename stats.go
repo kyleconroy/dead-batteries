@@ -42,11 +42,11 @@ func stats() error {
 		return err
 	}
 	for _, r := range results {
-		if len(r.Imports) > 0 {
-			broken += 1
-		}
 		if len(r.Errors) > 0 {
 			errors += 1
+		}
+		if len(r.Imports) > 0 {
+			broken += 1
 		}
 	}
 

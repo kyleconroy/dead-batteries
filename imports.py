@@ -44,6 +44,8 @@ def scan():
         return jsonify(imports=[], error="syntax-error")
     except UnicodeDecodeError:
         return jsonify(imports=[], error="unicode-decode-error")
+    except ValueError:
+        return jsonify(imports=[], error="value-error")
 
     found = set([])
     for node in walk(root):
