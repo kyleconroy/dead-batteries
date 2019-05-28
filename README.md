@@ -34,9 +34,6 @@ up about ~500MB of space.
 ./dead-battery mirror
 ```
 
-Some packages listed in simple.html do not have any files on PyPI
-TODO: Provide an example
-
 * `simple.html`: contains a list of all known packages on PyPI  
 * `meta/*.json`: contains package metadata for each package
 * `python3-packages.json`: contains a list of packages that support Python3
